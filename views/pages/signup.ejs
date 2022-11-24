@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="../../public/styles/styles.css">
+</head>
+
+<body>
+    <div>
+        <div class="container login">
+            <h1 class="titulo">Registro de usuario</h1>
+            <br>
+            <form action="/signup" class="form" method="post" autocomplete="off">
+                <div class="form-login">
+                    <label class="label-form" for="nombre">Ingrese su usuario</label>
+                    <input id="username" type="text" name="username" class="input-form" required>
+                </div>
+                <div class="form-login">
+                    <label class="label-form" for="password">Ingrese su contraseña</label>
+                    <input id="password" type="text" name="password" class="input-form" required>
+                </div>
+                <div class="form-login">
+                    <label class="label-form" for="email">Ingrese su mail</label>
+                    <input id="email" type="text" name="email" class="input-form" required>
+                </div>
+                <div class="botones-login">
+                    <button id="registrar" class="boton-form">Registrarse</button>
+                </div>
+            </form>
+            <div class="botones-login">
+                <div id="okRegister" class="text-error">
+                    <%= okRegister%>
+                </div>
+            </div>
+            <div class="botones-login">
+                <button onclick="location.href='/login'" id="btn-login" class="boton-form">Ir al Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
