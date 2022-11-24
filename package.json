@@ -3,10 +3,10 @@
   "name": "backendv3",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "backend-v3/public/index.js",
   "scripts": {
-    "start": "node src/main.js",
-    "watch": "nodemon src/main.js -e ejs,html,js,json"
+    "start": "node public/index.js",
+    "watch": "nodemon public/index.js -e ejs,html,js,json"
   },
   "keywords": [],
   "author": "",
