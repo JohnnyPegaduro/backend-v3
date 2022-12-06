@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/styles/styles.css">
+    <title>Información</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">
+            Información del proyecto:
+        </h1>
+        <ol>
+            <li>Argumentos: <%= argumentos %> </li>
+            <li>Plataforma: <%= plataforma %> </li>
+            <li>Versión de Node JS: <%= version %> </li>
+            <li>Memoria total reservada: <%= memoria %> </li>
+            <li>Path de ejecución: <%= pathExe %> </li>
+            <li>Process ID: <%= processId %> </li>
+            <li>Carpeta del proyecto: <%= carpeta %> </li>
+        </ol>
+        
+
+    </div>
+
+
+    <script src="../../routes/info.js" type="module"></script>
+</body>
+</html>
