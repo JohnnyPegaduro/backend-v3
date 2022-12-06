@@ -1,7 +1,9 @@
 import mongoose from "mongoose";
+import * as dotenv from "dotenv";
+dotenv.config();
 
 export const DBConnect = (cb) =>{
-    mongoose.connect ("mongodb+srv://Johnny:4321@codercluster.nvlvgso.mongodb.net/?retryWrites=true&w=majority", {useNewUrlParser: true},
+    mongoose.connect (`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}.nvlvgso.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`, {useNewUrlParser: true},
         (err)=> {
             console.log("Conectado!");
             if (err) {

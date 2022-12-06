@@ -2,7 +2,7 @@ import { Router } from "express";
 import passport from "passport";
 import { Strategy as localStrategy } from "passport-local";
 import bcrypt from "bcrypt";
-import { Users } from "../controller.js";
+import { Users } from "../config/configMongo.js";
 import path from "path";
 
 const homeRouter = new Router();

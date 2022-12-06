@@ -7,10 +7,16 @@ import homeRouter from "./routes/home.js";
 import { normalize, schema, } from 'normalizr'
 import Message from "./class/apiMensajes.js";
 import Product from "./class/productClass.js";
-import connection from "./configMySql.js";
-import randomRouter from "./routes/random.js";
-import { DBConnect } from "./controller.js";
+import connection from "./config/configMySql.js";
+import randomRouter from "./routes/randomProducts.js";
+import { DBConnect } from "./config/configMongo.js";
 import passport from "passport";
+import * as dotenv from "dotenv";
+import ParseArgs from "minimist";
+import infoRouter from "./routes/info.js";
+import randomNumRouter from "./routes/randomNumbers.js";
+
+dotenv.config();
 
 const app = express();
 const httpServer = new HttpServer(app);
@@ -28,7 +34,7 @@ app.set("view engine", "ejs");
 app.use(
   session({
     store: MongoStore.create({
-      mongoUrl: "mongodb+srv://Johnny:4321@codercluster.nvlvgso.mongodb.net/?retryWrites=true&w=majority",
+      mongoUrl: `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}.nvlvgso.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`,
     }),
     secret: "secreto",
     resave: false,
@@ -94,12 +100,27 @@ io.on("connection", async (socket) => {
   })
 })
 
-// rutas
+//* Rutas
 app.use(homeRouter);
 app.use(randomRouter);
+app.use(infoRouter);
+app.use("/api/randoms", randomNumRouter);
+
+//* Puerto como parámetro
+const options= {
+  alias: {
+    p: "PORT",
+  },
+  default: {
+    PORT: 8080,
+  }
+}
+
+const argv = process.argv.slice(2);
+const { PORT } = ParseArgs(argv, options)
 
 DBConnect (()=> {
-  const connectedServer = httpServer.listen(8080, () => {
+  const connectedServer = httpServer.listen(PORT, () => {
     console.log(
       `Servidor http escuchando en el puerto ${connectedServer.address().port}`
     );

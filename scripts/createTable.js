@@ -1,5 +1,5 @@
 import knex from "knex";
-import connection from "./configMySql.js";
+import connection from "../config/configMySql";
 const KnexMySql = new knex (connection);
 
 
