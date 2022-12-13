@@ -15,6 +15,9 @@ import * as dotenv from "dotenv";
 import ParseArgs from "minimist";
 import infoRouter from "./routes/info.js";
 import randomNumRouter from "./routes/randomNumbers.js";
+import { fork } from "child_process";
+import cluster from "cluster";
+import { cpus } from "os";
 
 dotenv.config();
 
@@ -46,7 +49,7 @@ app.use(
   })
 );
 
-//Passport
+//*Passport
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -62,7 +65,7 @@ io.on("connection", async (socket) => {
         const products = await producto.getAll()
         io.sockets.emit("productos", products)
     })
-  
+
   //* CHAT
   let messages = await usersMessages.getAll()
   //* Normalización
@@ -94,7 +97,7 @@ io.on("connection", async (socket) => {
       const postSchema = new schema.Entity("post", { author: authorSchema });
       const postsSchema = new schema.Entity("posts", { mensajes: [postSchema] })
       const normMessages = normalize(messages, postsSchema)
-      
+
       //*Post emisión
       io.sockets.emit("mensajes", normMessages);
   })
@@ -110,23 +113,54 @@ app.use("/api/randoms", randomNumRouter);
 const options= {
   alias: {
     p: "PORT",
+    m: "MODO",
   },
   default: {
     PORT: 8080,
+    MODO: "fork",
   }
 }
 
 const argv = process.argv.slice(2);
-const { PORT } = ParseArgs(argv, options)
+const { PORT, MODO } = ParseArgs(argv, options)
 
-DBConnect (()=> {
-  const connectedServer = httpServer.listen(PORT, () => {
-    console.log(
-      `Servidor http escuchando en el puerto ${connectedServer.address().port}`
+const cpu = cpus().length;
+
+if (MODO == "cluster") {
+  if (cluster.isPrimary) {
+    console.log(`Primary: ${process.pid}`);
+
+    //Fork workers
+    for (let i = 1; i <= cpu; i++){
+      cluster.fork();
+    }
+
+    cluster.on("exit", (worker) => {
+      console.log(`Worker with PID ${worker.process.pid} DOWN`);
+      cluster.fork();
+    })
+  } else {
+    DBConnect (()=> {
+      const connectedServer = httpServer.listen(PORT, () => {
+        console.log(
+          `Servidor http escuchando en el puerto ${PORT} en modo ${MODO} en el worker ${process.pid}`
+        );
+      });
+      connectedServer.on("error", (error) =>
+        console.log(`Error en servidor ${error}`)
+      );
+    })
+  }
+} else {
+  DBConnect (()=> {
+    const connectedServer = httpServer.listen(PORT, () => {
+      console.log(
+        `Servidor http escuchando en el puerto ${PORT} en modo ${MODO}`
+      );
+    });
+    connectedServer.on("error", (error) =>
+      console.log(`Error en servidor ${error}`)
     );
-  });
-  connectedServer.on("error", (error) =>
-    console.log(`Error en servidor ${error}`)
-  );
-})
+  })
+}
 
