@@ -15,9 +15,9 @@ import * as dotenv from "dotenv";
 import ParseArgs from "minimist";
 import infoRouter from "./routes/info.js";
 import randomNumRouter from "./routes/randomNumbers.js";
-import { fork } from "child_process";
 import cluster from "cluster";
 import { cpus } from "os";
+import logger from "./config/configLog4Js.js";
 
 dotenv.config();
 
@@ -53,6 +53,12 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
+//* Logger
+app.use((req, res, next) => {
+  logger.info(`Request ${req.method} at ${req.url}`)
+  next();
+});
+
 io.on("connection", async (socket) => {
   console.log("Usuario conectado")
 
@@ -65,7 +71,7 @@ io.on("connection", async (socket) => {
         const products = await producto.getAll()
         io.sockets.emit("productos", products)
     })
-
+  
   //* CHAT
   let messages = await usersMessages.getAll()
   //* Normalización
@@ -97,7 +103,7 @@ io.on("connection", async (socket) => {
       const postSchema = new schema.Entity("post", { author: authorSchema });
       const postsSchema = new schema.Entity("posts", { mensajes: [postSchema] })
       const normMessages = normalize(messages, postsSchema)
-
+      
       //*Post emisión
       io.sockets.emit("mensajes", normMessages);
   })
@@ -109,6 +115,13 @@ app.use(randomRouter);
 app.use(infoRouter);
 app.use("/api/randoms", randomNumRouter);
 
+//* Logger para rutas inexistentes
+app.all("*", (req, res, next) => {
+  logger.warn(`Failed request ${req.method} at ${req.url}`);
+  res.send({ error:true }).status(500);
+  next();
+})
+
 //* Puerto como parámetro
 const options= {
   alias: {
@@ -117,7 +130,7 @@ const options= {
   },
   default: {
     PORT: 8080,
-    MODO: "fork",
+    MODO: "FORK",
   }
 }
 
@@ -126,7 +139,7 @@ const { PORT, MODO } = ParseArgs(argv, options)
 
 const cpu = cpus().length;
 
-if (MODO == "cluster") {
+if (MODO == "CLUSTER") {
   if (cluster.isPrimary) {
     console.log(`Primary: ${process.pid}`);
 
@@ -163,4 +176,5 @@ if (MODO == "cluster") {
     );
   })
 }
+
 

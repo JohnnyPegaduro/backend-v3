@@ -1,4 +1,6 @@
-import knex from 'knex'
+import knex from 'knex';
+import logger from "../config/configLog4Js.js";
+
 
 class Product {
     constructor(connection, table) {
@@ -11,7 +13,7 @@ class Product {
             return await this.KnexProducts.select("*").from(this.table)
         }
         catch (e) {
-            console.log(e);
+            logger.error(`Api de productos: ${e}`);
         }
     }
 
@@ -24,7 +26,7 @@ class Product {
             }
             return await this.KnexProducts.insert(newProduct).into(this.table)
         } catch (e) {
-            console.log(e);
+            logger.error(`Api de productos: ${e}`);
         }
     }
 }

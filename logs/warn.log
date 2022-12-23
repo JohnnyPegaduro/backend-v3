@@ -1,0 +1,6 @@
+
+[2022-12-17T13:43:02.830] [WARN] default - Failed request GET at /info3
+[2022-12-17T13:51:30.766] [ERROR] default - Error en la Api de productos: Error: connect ECONNREFUSED 127.0.0.1:3306
+[2022-12-17T13:53:48.030] [ERROR] default - Api de productos: Error: connect ECONNREFUSED 127.0.0.1:3306
+[2022-12-17T14:17:09.790] [WARN] default - Failed request GET at /randoms
+[2022-12-17T16:07:08.649] [WARN] default - Failed request GET at /infi

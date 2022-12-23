@@ -1,0 +1,1416 @@
+Statistical profiling result from profilerSinConsole.log, (9363 ticks, 23 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+    132    1.4%          /usr/lib/system/libsystem_pthread.dylib
+    110    1.2%          /usr/lib/system/libsystem_malloc.dylib
+     80    0.9%          /usr/lib/system/libsystem_platform.dylib
+     79    0.8%          /usr/lib/system/libsystem_c.dylib
+     49    0.5%          /usr/lib/system/libsystem_kernel.dylib
+     44    0.5%          /usr/lib/libc++.1.dylib
+      7    0.1%          /usr/lib/libc++abi.dylib
+      1    0.0%          /usr/lib/system/libsystem_notify.dylib
+      1    0.0%          /usr/lib/system/libdyld.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     15    0.2%    0.2%  RegExp: [ \t]*<%_
+     14    0.1%    0.2%  LazyCompile: *resolve node:path:1091:10
+     14    0.1%    0.2%  LazyCompile: *next /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:177:16
+      9    0.1%    0.1%  LazyCompile: *deserializeObject /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/deserializer.js:65:27
+      8    0.1%    0.1%  LazyCompile: *scanLine /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:815:22
+      6    0.1%    0.1%  LazyCompile: *normalizeString node:path:66:25
+      5    0.1%    0.1%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      3    0.0%    0.0%  RegExp: (<%%|%%>|<%=|<%-|<%_|<%#|<%|%>|-%>|_%>)
+      3    0.0%    0.0%  LazyCompile: *validateString node:internal/validators:119:24
+      3    0.0%    0.0%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      3    0.0%    0.0%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:640:37
+      3    0.0%    0.0%  LazyCompile: *Module._findPath node:internal/modules/cjs/loader:505:28
+      3    0.0%    0.0%  Function: ^validateString node:internal/validators:119:24
+      3    0.0%    0.0%  Function: ^stat node:internal/modules/cjs/loader:151:14
+      3    0.0%    0.0%  Function: ^shouldDestroy /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:435:27
+      3    0.0%    0.0%  Function: ^handle /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/layer.js:86:49
+      2    0.0%    0.0%  RegExp: [|\\{}()[\]^$+*?.]
+      2    0.0%    0.0%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      2    0.0%    0.0%  LazyCompile: *realpathSync node:fs:2460:22
+      2    0.0%    0.0%  LazyCompile: *normalize node:path:1127:12
+      2    0.0%    0.0%  LazyCompile: *extname node:path:1385:10
+      2    0.0%    0.0%  Function: ^resolve node:path:1091:10
+      2    0.0%    0.0%  Function: ^next /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/route.js:116:16
+      2    0.0%    0.0%  Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      2    0.0%    0.0%  Function: ^_writeRaw node:_http_outgoing:354:19
+      2    0.0%    0.0%  Function: ^Module.require node:internal/modules/cjs/loader:1020:36
+      2    0.0%    0.0%  Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      2    0.0%    0.0%  Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      2    0.0%    0.0%  Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      2    0.0%    0.0%  Function: ^<anonymous> node:internal/console/constructor:355:10
+      2    0.0%    0.0%  Function: ^<anonymous> file:///Users/Matias/Desktop/Backend-v3/routes/info.js:19:25
+      2    0.0%    0.0%  Function: ^<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/appenders/logLevelFilter.js:4:10
+      2    0.0%    0.0%  Function: ^<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:742:32
+      1    0.0%    0.0%  RegExp: _%>[ \t]*
+      1    0.0%    0.0%  RegExp: ^\uFEFF
+      1    0.0%    0.0%  RegExp: ^\/logout\/?$
+      1    0.0%    0.0%  RegExp: ^\/login\/?$
+      1    0.0%    0.0%  RegExp: ^\/?$
+      1    0.0%    0.0%  RegExp: ^((?:(?:[0-9a-fA-F]{1,4}):){7}(?:(?:[0-9a-fA-F]{1,4})|:)|(?:(?:[0-9a-fA-F]{1,4}):){6}(?:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|:(?:[0-9a-fA-F]{1,4})|:)|(?:(?:[0-9a-fA-F]{1,4}):){5}(?::((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,2}|:)|(?:(?:[0-9a-fA-F]{1,4}):){4}(?:(:(?:[0-9a-fA-F]{1,4})){0,1}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,3}|:)|(?:(?:[0-9a-fA-F]{1,4}):){3}(?:(:(?:[0-9a-fA-F]{1,4})){0,2}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,4}|:)|(?:(?:[0-9a-fA-F]{1,4}):){2}(?:(:(?:[0-9a-fA-F]{1,4})){0,3}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,5}|:)|(?:(?:[0-9a-fA-F]{1,4}):){1}(?:(:(?:[0-9a-fA-F]{1,4})){0,4}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,6}|:)|(?::((?::(?:[0-9a-fA-F]{1,4})){0,5}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(?::(?:[0-9a-fA-F]{1,4})){1,7}|:)))(%[0-9a-zA-Z-.:]{1,})?$
+      1    0.0%    0.0%  RegExp: ;\s*charset\s*=
+      1    0.0%    0.0%  RegExp: ;(\s*$)
+      1    0.0%    0.0%  RegExp: ([^\n:]*):([^\n]*)(?:\n|$)
+      1    0.0%    0.0%  RegExp: (?:^|\/)\.?\.$
+      1    0.0%    0.0%  LazyCompile: *validateNumber node:internal/validators:124:24
+      1    0.0%    0.0%  LazyCompile: *readPackage node:internal/modules/cjs/loader:301:21
+      1    0.0%    0.0%  LazyCompile: *parseTemplateText /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:761:31
+      1    0.0%    0.0%  LazyCompile: *join node:path:1166:7
+      1    0.0%    0.0%  LazyCompile: *getPathFromURLPosix node:internal/url:1412:29
+      1    0.0%    0.0%  LazyCompile: *compile /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:571:21
+      1    0.0%    0.0%  LazyCompile: *basename node:path:1306:11
+      1    0.0%    0.0%  LazyCompile: *Readable.read node:internal/streams/readable:394:35
+      1    0.0%    0.0%  LazyCompile: *Hash node:internal/crypto/hash:62:14
+      1    0.0%    0.0%  LazyCompile: *<anonymous> node:internal/fs/utils:689:40
+      1    0.0%    0.0%  Function: ^writevGeneric node:internal/stream_base_commons:122:23
+      1    0.0%    0.0%  Function: ^writeOrBuffer node:internal/streams/writable:367:23
+      1    0.0%    0.0%  Function: ^writeHead node:_http_server:292:19
+      1    0.0%    0.0%  Function: ^validateEncoding node:internal/validators:208:26
+      1    0.0%    0.0%  Function: ^tryStatSync node:fs:413:21
+      1    0.0%    0.0%  Function: ^tryHandleCache /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:254:24
+      1    0.0%    0.0%  Function: ^trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+      1    0.0%    0.0%  Function: ^stringToFlags node:internal/fs/utils:558:23
+      1    0.0%    0.0%  Function: ^store.generate /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:158:28
+      1    0.0%    0.0%  Function: ^stat node:fs:1504:14
+      1    0.0%    0.0%  Function: ^slice node:buffer:599:12
+      1    0.0%    0.0%  Function: ^setWriteHeadHeaders /Users/Matias/Desktop/Backend-v3/node_modules/on-headers/index.js:105:30
+      1    0.0%    0.0%  Function: ^serializeInto /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/serializer.js:553:23
+      1    0.0%    0.0%  Function: ^send /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:111:25
+      1    0.0%    0.0%  Function: ^resume node:internal/streams/readable:977:16
+      1    0.0%    0.0%  Function: ^resOnFinish node:_http_server:816:21
+      1    0.0%    0.0%  Function: ^readSync node:fs:699:18
+      1    0.0%    0.0%  Function: ^readPackage node:internal/modules/cjs/loader:301:21
+      1    0.0%    0.0%  Function: ^process_params /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:338:47
+      1    0.0%    0.0%  Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    0.0%    0.0%  Function: ^processPromiseRejections node:internal/process/promises:211:34
+      1    0.0%    0.0%  Function: ^processHeader node:_http_outgoing:511:23
+      1    0.0%    0.0%  Function: ^parserOnHeadersComplete node:_http_common:77:33
+      1    0.0%    0.0%  Function: ^onwrite node:internal/streams/writable:427:17
+      1    0.0%    0.0%  Function: ^onStatError /Users/Matias/Desktop/Backend-v3/node_modules/send/index.js:412:57
+      1    0.0%    0.0%  Function: ^normalize node:path:1127:12
+      1    0.0%    0.0%  Function: ^nextTick node:internal/process/task_queues:104:18
+      1    0.0%    0.0%  Function: ^module.exports /Users/Matias/Desktop/Backend-v3/node_modules/utils-merge/index.js:16:36
+      1    0.0%    0.0%  Function: ^listenerCount node:events:840:23
+      1    0.0%    0.0%  Function: ^isstats /Users/Matias/Desktop/Backend-v3/node_modules/etag/index.js:104:18
+      1    0.0%    0.0%  Function: ^isUint8Array node:internal/util/types:13:22
+      1    0.0%    0.0%  Function: ^initialize /Users/Matias/Desktop/Backend-v3/node_modules/passport/lib/middleware/initialize.js:51:29
+      1    0.0%    0.0%  Function: ^handleCache /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:210:21
+      1    0.0%    0.0%  Function: ^getTimerDuration node:internal/timers:383:26
+      1    0.0%    0.0%  Function: ^getPathFromURLPosix node:internal/url:1412:29
+      1    0.0%    0.0%  Function: ^getHeader node:_http_outgoing:647:57
+      1    0.0%    0.0%  Function: ^generateETag /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/utils.js:273:32
+      1    0.0%    0.0%  Function: ^generate /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:363:22
+      1    0.0%    0.0%  Function: ^extname node:path:1385:10
+      1    0.0%    0.0%  Function: ^exports.escapeXML /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/utils.js:96:30
+      1    0.0%    0.0%  Function: ^etag /Users/Matias/Desktop/Backend-v3/node_modules/etag/index.js:70:15
+      1    0.0%    0.0%  Function: ^endReadableNT node:internal/streams/readable:1351:23
+      1    0.0%    0.0%  Function: ^end /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:250:27
+      1    0.0%    0.0%  Function: ^emit node:events:460:44
+      1    0.0%    0.0%  Function: ^dispatch /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/route.js:98:45
+      1    0.0%    0.0%  Function: ^deserializeObject /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/deserializer.js:65:27
+      1    0.0%    0.0%  Function: ^debug /Users/Matias/Desktop/Backend-v3/node_modules/express/node_modules/debug/src/debug.js:65:17
+      1    0.0%    0.0%  Function: ^compile /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:571:21
+      1    0.0%    0.0%  Function: ^closeSync node:fs:535:19
+      1    0.0%    0.0%  Function: ^clearTimeout node:timers:185:22
+      1    0.0%    0.0%  Function: ^callback node:internal/streams/writable:552:44
+      1    0.0%    0.0%  Function: ^basename node:path:1306:11
+      1    0.0%    0.0%  Function: ^anonymous /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:695:59
+      1    0.0%    0.0%  Function: ^allocate node:buffer:403:18
+      1    0.0%    0.0%  Function: ^allocUnsafe node:buffer:378:42
+      1    0.0%    0.0%  Function: ^alignPool node:buffer:163:19
+      1    0.0%    0.0%  Function: ^afterWrite node:internal/streams/writable:489:20
+      1    0.0%    0.0%  Function: ^addListener node:events:604:58
+      1    0.0%    0.0%  Function: ^_write node:internal/streams/writable:285:16
+      1    0.0%    0.0%  Function: ^_destroy node:_http_incoming:221:55
+      1    0.0%    0.0%  Function: ^_addHeaderLines node:_http_incoming:244:25
+      1    0.0%    0.0%  Function: ^_addHeaderLine node:_http_incoming:382:24
+      1    0.0%    0.0%  Function: ^Writable.uncork node:internal/streams/writable:343:37
+      1    0.0%    0.0%  Function: ^Writable.cork node:internal/streams/writable:339:35
+      1    0.0%    0.0%  Function: ^Timeout node:internal/timers:167:17
+      1    0.0%    0.0%  Function: ^ServerDescription /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/server_description.js:35:16
+      1    0.0%    0.0%  Function: ^Readable.read node:internal/streams/readable:394:35
+      1    0.0%    0.0%  Function: ^Readable.on node:internal/streams/readable:874:33
+      1    0.0%    0.0%  Function: ^Module._resolveLookupPaths node:internal/modules/cjs/loader:678:38
+      1    0.0%    0.0%  Function: ^Long.isNegative /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/long.js:493:42
+      1    0.0%    0.0%  Function: ^Long.fromBits /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/long.js:89:30
+      1    0.0%    0.0%  Function: ^Long /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/long.js:59:18
+      1    0.0%    0.0%  Function: ^Hash node:internal/crypto/hash:62:14
+      1    0.0%    0.0%  Function: ^FastBuffer node:internal/buffer:958:14
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:74:3
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/utils:689:40
+      1    0.0%    0.0%  Function: ^<anonymous> node:fs:205:10
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/server_description.js:45:137
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/engine.io/build/server.js:479:30
+      1    0.0%    0.0%  Function: *wasm-function[17]
+
+ [C++]:
+   ticks  total  nonlib   name
+   3683   39.3%   41.6%  t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+   1565   16.7%   17.7%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+    943   10.1%   10.6%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    528    5.6%    6.0%  T node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+    474    5.1%    5.3%  T __kernelrpc_mach_port_get_context
+    329    3.5%    3.7%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    240    2.6%    2.7%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+    164    1.8%    1.9%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+    125    1.3%    1.4%  t node::fs::Stat(v8::FunctionCallbackInfo<v8::Value> const&)
+    120    1.3%    1.4%  T _host_request_notification
+     45    0.5%    0.5%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+     37    0.4%    0.4%  T _mach_msg_destroy
+     31    0.3%    0.3%  T _mach_vm_map
+     31    0.3%    0.3%  T _host_get_special_port
+     22    0.2%    0.2%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+     21    0.2%    0.2%  T _mig_strncpy_zerofill
+     20    0.2%    0.2%  t node::fs::FStat(v8::FunctionCallbackInfo<v8::Value> const&)
+     18    0.2%    0.2%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+     18    0.2%    0.2%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+     17    0.2%    0.2%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+     15    0.2%    0.2%  T _posix_spawn
+     14    0.1%    0.2%  T ___thread_selfid
+     12    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+     10    0.1%    0.1%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+     10    0.1%    0.1%  T node::binding::DLOpen(v8::FunctionCallbackInfo<v8::Value> const&)
+      8    0.1%    0.1%  T _semaphore_create
+      6    0.1%    0.1%  T node::i18n::ConverterObject::Decode(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.1%    0.1%  t non-virtual thunk to node::PerIsolatePlatformData::NonNestableDelayedTasksEnabled() const
+      5    0.1%    0.1%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.0%    0.0%  t node::i18n::ToASCII(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.0%    0.0%  T node::fs::BindingData::Deserialize(v8::Local<v8::Context>, v8::Local<v8::Object>, int, node::InternalFieldInfo*)
+      4    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventAfter(node::AsyncWrap::ProviderType, double)
+      4    0.0%    0.0%  T _mach_get_times
+      3    0.0%    0.0%  t void node::cares_wrap::(anonymous namespace)::Query<node::cares_wrap::QueryWrap<node::cares_wrap::SrvTraits> >(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<node::CleanupHookCallback, void*>*> std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::find<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+      3    0.0%    0.0%  t node::fs::OpenFileHandle(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  T node::cares_wrap::ChannelWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)3>(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)2>(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t node::fs::MKDir(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t node::cares_wrap::QueryWrap<node::cares_wrap::TxtTraits>::~QueryWrap()
+      2    0.0%    0.0%  t node::EnvQuery(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Integer> const&)
+      2    0.0%    0.0%  t node::Buffer::(anonymous namespace)::EncodeUtf8String(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_message_begin())>::Raw(llhttp__internal_s*)
+      2    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_headers_complete())>::Raw(llhttp__internal_s*)
+      2    0.0%    0.0%  T node::loader::ModuleWrap::Link(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventBefore()
+      2    0.0%    0.0%  T node::AsyncHooks::pop_async_context(double)
+      2    0.0%    0.0%  T node::AsyncHooks::AsyncHooks(v8::Isolate*, node::AsyncHooks::SerializeInfo const*)
+      1    0.0%    0.0%  t std::__1::__hash_table<unsigned int, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int>, std::__1::allocator<unsigned int> >::__rehash(unsigned long)
+      1    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<void*, void*>*> std::__1::__hash_table<void*, std::__1::hash<void*>, std::__1::equal_to<void*>, std::__1::allocator<void*> >::find<void*>(void* const&)
+      1    0.0%    0.0%  t node::fs::GetReqWrap(v8::FunctionCallbackInfo<v8::Value> const&, int, bool)
+      1    0.0%    0.0%  t node::EnvEnumerator(v8::PropertyCallbackInfo<v8::Array> const&)
+      1    0.0%    0.0%  t node::CustomBufferJSListener::OnStreamDestroy()
+      1    0.0%    0.0%  t node::Buffer::(anonymous namespace)::Compare(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_message_complete())>::Raw(llhttp__internal_s*)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Initialize(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::worker::JSTransferable::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::loader::ModuleWrap::SetSyntheticExport(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::loader::ModuleWrap::Instantiate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::i18n::ConverterObject::Create(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::fs::FSReqAfterScope::Reject(uv_fs_s*)
+      1    0.0%    0.0%  T node::cares_wrap::QueryWrap<node::cares_wrap::SrvTraits>::Callback(void*, int, int, unsigned char*, int)
+      1    0.0%    0.0%  T node::UVException(v8::Isolate*, int, char const*, char const*, char const*, char const*)
+      1    0.0%    0.0%  T node::NodeArrayBufferAllocator::AllocateUninitialized(unsigned long)
+      1    0.0%    0.0%  T node::NodeArrayBufferAllocator::Allocate(unsigned long)
+      1    0.0%    0.0%  T node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, int)
+      1    0.0%    0.0%  T node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::Environment::RunAndClearNativeImmediates(bool)
+      1    0.0%    0.0%  T node::Environment::Environment(node::IsolateData*, v8::Isolate*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > const&, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > const&, node::EnvSerializeInfo const*, node::EnvironmentFlags::Flags, node::ThreadId)
+      1    0.0%    0.0%  T node::BaseObject::decrease_refcount()
+      1    0.0%    0.0%  T node::AsyncWrap::EmitDestroy(node::Environment*, double)
+      1    0.0%    0.0%  T _task_restartable_ranges_register
+      1    0.0%    0.0%  T _mk_timer_create
+      1    0.0%    0.0%  T _mk_timer_cancel
+      1    0.0%    0.0%  T _mach_wait_until
+      1    0.0%    0.0%  T _mach_vm_deallocate
+
+ [Summary]:
+   ticks  total  nonlib   name
+    232    2.5%    2.6%  JavaScript
+   8605   91.9%   97.1%  C++
+    210    2.2%    2.4%  GC
+    503    5.4%          Shared libraries
+     23    0.2%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   7859   97.2%   83.9%  t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+    118    1.5%    1.3%  T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+     31    0.4%    0.3%  T _mach_vm_map
+     27    0.3%    0.3%  T _host_request_notification
+     15    0.2%    0.2%  T _posix_spawn
+     13    0.2%    0.1%  T ___thread_selfid
+      7    0.1%    0.1%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      7    0.1%    0.1%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      5    0.1%    0.1%  T _host_get_special_port
+      1    0.0%    0.0%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::fs::GetReqWrap(v8::FunctionCallbackInfo<v8::Value> const&, int, bool)
+      1    0.0%    0.0%  T _mach_msg_destroy
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   3683   39.3%  t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+   1951   53.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+    236   12.1%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+    236  100.0%        Function: ^Socket._writeGeneric node:net:848:42
+    236  100.0%          Function: ^Socket._writev node:net:880:36
+    236  100.0%            Function: ^doWrite node:internal/streams/writable:400:17
+    173    8.9%      t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+     40   23.1%        LazyCompile: *scanLine /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:815:22
+     21   52.5%          Function: ^<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:742:32
+     21  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+     19   47.5%          LazyCompile: *<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:742:32
+     16   84.2%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      3   15.8%            LazyCompile: *compile /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:571:21
+     11    6.4%        Function: ^readPackage node:internal/modules/cjs/loader:301:21
+      6   54.5%          Function: ^readPackageScope node:internal/modules/cjs/loader:332:26
+      5   83.3%            Function: ^trySelf node:internal/modules/cjs/loader:452:17
+      1   16.7%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      3   27.3%          Function: ^tryPackage node:internal/modules/cjs/loader:349:20
+      3  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      2   18.2%          Function: ^resolveExports node:internal/modules/cjs/loader:483:24
+      2  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      8    4.6%        LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:499:36
+      8  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:567:30
+      8  100.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:567:30
+      8    4.6%        Function: ^exports.escapeRegExpChars /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/utils.js:41:38
+      8  100.0%          Function: ^createRegex /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:560:25
+      8  100.0%            Function: ^Template /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:509:18
+      5    2.9%        Function: ^exports.escapeXML /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/utils.js:96:30
+      5  100.0%          Function: ^<anonymous> :1:20
+      5  100.0%            Function: ^anonymous /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:695:59
+      4    2.3%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:505:28
+      4  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      4  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      4    2.3%        Function: ^header /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:777:29
+      3   75.0%          Function: ^contentType /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:619:32
+      3  100.0%            Function: ^send /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:111:25
+      1   25.0%          LazyCompile: ~send /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:111:25
+      1  100.0%            LazyCompile: ~done /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:1033:27
+      4    2.3%        Function: ^asString /Users/Matias/Desktop/Backend-v3/node_modules/date-format/lib/index.js:29:18
+      4  100.0%          Function: ^timestampLevelAndCategory /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/layouts.js:42:35
+      4  100.0%            Function: ^colouredLayout /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/layouts.js:73:24
+      3    1.7%        LazyCompile: ~normalizeString node:path:66:25
+      3  100.0%          LazyCompile: ~resolve node:path:1091:10
+      3  100.0%            LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:103:28
+      3    1.7%        LazyCompile: ~finalizeResolution node:internal/modules/esm/resolve:396:28
+      3  100.0%          LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:985:23
+      3  100.0%            LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1124:30
+      3    1.7%        Function: ^format /Users/Matias/Desktop/Backend-v3/node_modules/content-type/index.js:65:17
+      3  100.0%          Function: ^setCharset /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/utils.js:248:41
+      3  100.0%            Function: ^send /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:111:25
+      3    1.7%        Function: ^expressInit /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/middleware/init.js:29:30
+      2   66.7%          LazyCompile: *trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+      2  100.0%            LazyCompile: *next /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:177:16
+      1   33.3%          Function: ^handle /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+      3    1.7%        Function: ^createRegex /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:560:25
+      3  100.0%          Function: ^Template /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:509:18
+      3  100.0%            Function: ^compile /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:381:35
+      3    1.7%        Function: ^Module node:internal/modules/cjs/loader:172:16
+      3  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      3  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1020:36
+      3    1.7%        Function: ^FastBuffer node:internal/buffer:958:14
+      2   66.7%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      2  100.0%            Function: ^allocate node:buffer:403:18
+      1   33.3%          Function: ^alloc node:buffer:365:30
+      1  100.0%            Function: ^serialize /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/bson.js:110:19
+      2    1.2%        LazyCompile: ~parse /Users/Matias/Desktop/Backend-v3/node_modules/dotenv/lib/main.js:11:16
+      2  100.0%          LazyCompile: ~config /Users/Matias/Desktop/Backend-v3/node_modules/dotenv/lib/main.js:58:17
+      2  100.0%            Script: ~<anonymous> file:///Users/Matias/Desktop/Backend-v3/config/configMongo.js:1:1
+      2    1.2%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:505:28
+      2  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      1   50.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:771:24
+      1   50.0%            Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      2    1.2%        Function: ~<anonymous> node:internal/net:1:1
+      2  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      2    1.2%        Function: ~<anonymous> node:internal/modules/esm/assert:1:1
+      2  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      2    1.2%        Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      2  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      2    1.2%        Function: ~<anonymous> node:internal/deps/cjs-module-lexer/dist/lexer:1:1
+      2  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      2    1.2%        Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/long.js:1:1
+      2  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      2  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      2    1.2%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      1   50.0%          Function: ^tryFile node:internal/modules/cjs/loader:395:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:411:23
+      1   50.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      2    1.2%        Function: ^realpathSync node:fs:2460:22
+      2  100.0%          Function: ^toRealPath node:internal/modules/cjs/loader:404:20
+      2  100.0%            Function: ^tryFile node:internal/modules/cjs/loader:395:17
+      2    1.2%        Function: ^getOwn node:internal/bootstrap/loaders:187:16
+      2  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:304:14
+      1   50.0%            LazyCompile: ~<anonymous> node:internal/bootstrap/loaders:290:15
+      1   50.0%            Function: ^<anonymous> node:internal/bootstrap/loaders:290:15
+      2    1.2%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      2  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      2  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      2    1.2%        Function: ^checkInvalidHeaderChar node:_http_common:231:32
+      2  100.0%          Function: ^<anonymous> node:_http_outgoing:577:45
+      2  100.0%            Function: ^setHeader node:_http_outgoing:601:57
+      2    1.2%        Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      2  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      2  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      2    1.2%        Function: ^<anonymous> node:internal/fs/utils:360:35
+      2  100.0%          Function: ^<anonymous> node:internal/fs/utils:671:38
+      2  100.0%            Function: ^<anonymous> node:internal/fs/utils:683:42
+     49    2.5%      Function: ^compile /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:571:21
+     49  100.0%        Function: ^compile /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:381:35
+     49  100.0%          Function: ^handleCache /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:210:21
+     49  100.0%            Function: ^tryHandleCache /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:254:24
+     41    2.1%      Function: ^Hash node:internal/crypto/hash:62:14
+     41  100.0%        Function: ^createHash node:crypto:129:20
+     31   75.6%          Function: ^hash /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:596:14
+     16   51.6%            Function: ^generate /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:363:22
+     15   48.4%            Function: ^isModified /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:425:24
+     10   24.4%          Function: ^entitytag /Users/Matias/Desktop/Backend-v3/node_modules/etag/index.js:39:20
+     10  100.0%            Function: ^etag /Users/Matias/Desktop/Backend-v3/node_modules/etag/index.js:70:15
+     38    1.9%      Function: ^initialize /Users/Matias/Desktop/Backend-v3/node_modules/passport/lib/middleware/initialize.js:51:29
+     21   55.3%        Function: ^handle /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/layer.js:86:49
+     21  100.0%          Function: ^trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+     18   85.7%            LazyCompile: *next /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:177:16
+      3   14.3%            Function: ^<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:280:64
+     17   44.7%        LazyCompile: *trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+     17  100.0%          LazyCompile: *next /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:177:16
+     17  100.0%            Function: ^session /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:179:26
+     33    1.7%      Function: ^randomFillSync node:internal/crypto/random:113:24
+     33  100.0%        Function: ^randomBytes node:internal/crypto/random:93:21
+     33  100.0%          Function: ^randomBytesSync /Users/Matias/Desktop/Backend-v3/node_modules/random-bytes/index.js:72:25
+     33  100.0%            Function: ^uidSync /Users/Matias/Desktop/Backend-v3/node_modules/uid-safe/index.js:75:18
+     32    1.6%      LazyCompile: ~configSecureContext node:internal/tls/secure-context:124:29
+     30   93.8%        LazyCompile: ~createSecureContext node:_tls_common:103:29
+     30  100.0%          LazyCompile: ~connect node:_tls_wrap:1602:35
+     30  100.0%            LazyCompile: ~makeConnection /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:256:24
+      2    6.3%        Function: ^createSecureContext node:_tls_common:103:29
+      2  100.0%          Function: ^connect node:_tls_wrap:1602:35
+      1   50.0%            LazyCompile: ~makeConnection /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:256:24
+      1   50.0%            Function: ^makeConnection /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:256:24
+     32    1.6%      LazyCompile: *nextTick node:internal/process/task_queues:104:18
+     16   50.0%        Function: ^onwrite node:internal/streams/writable:427:17
+     12   75.0%          Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      9   75.0%            Function: ^writevGeneric node:internal/stream_base_commons:122:23
+      3   25.0%            Function: ^writeGeneric node:internal/stream_base_commons:147:22
+      4   25.0%          LazyCompile: *writeOrBuffer node:internal/streams/writable:367:23
+      2   50.0%            LazyCompile: *_write node:internal/streams/writable:285:16
+      2   50.0%            Function: ^_write node:internal/streams/writable:285:16
+      5   15.6%        Function: ^resume node:internal/streams/readable:977:16
+      5  100.0%          Function: ^Readable.resume node:internal/streams/readable:963:37
+      5  100.0%            Function: ^_dump node:_http_incoming:419:49
+      4   12.5%        Function: ^endReadable node:internal/streams/readable:1341:21
+      4  100.0%          Function: ^Readable.read node:internal/streams/readable:394:35
+      3   75.0%            Function: ^flow node:internal/streams/readable:1008:14
+      1   25.0%            Function: ^resume_ node:internal/streams/readable:984:17
+      3    9.4%        Function: ^emitReadable node:internal/streams/readable:563:22
+      3  100.0%          Function: ^onEofChunk node:internal/streams/readable:533:20
+      3  100.0%            Function: ^readableAddChunk node:internal/streams/readable:236:26
+      2    6.3%        Function: ^onDestroy node:internal/streams/destroy:73:21
+      2  100.0%          Function: ^onError node:_http_incoming:429:17
+      2  100.0%            Function: ^_destroy node:_http_incoming:221:55
+      1    3.1%        LazyCompile: *Readable.read node:internal/streams/readable:394:35
+      1  100.0%          Function: ^resume_ node:internal/streams/readable:984:17
+      1  100.0%            LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      1    3.1%        Function: ^resOnFinish node:_http_server:816:21
+      1  100.0%          LazyCompile: *emit node:events:460:44
+      1  100.0%            Function: ^onFinish node:_http_outgoing:907:18
+     31    1.6%      Function: ^session /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:179:26
+     20   64.5%        Function: ^handle /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/layer.js:86:49
+     20  100.0%          Function: ^trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+     18   90.0%            LazyCompile: *next /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:177:16
+      2   10.0%            Function: ^<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:280:64
+     11   35.5%        LazyCompile: *trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+     11  100.0%          LazyCompile: *next /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:177:16
+     11  100.0%            Function: ^error /Users/Matias/Desktop/Backend-v3/node_modules/serve-static/index.js:115:39
+     31    1.6%      Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+     31  100.0%        Function: ^writeGeneric node:internal/stream_base_commons:147:22
+     31  100.0%          Function: ^Socket._writeGeneric node:net:848:42
+     31  100.0%            Function: ^Socket._write node:net:885:35
+     28    1.4%      LazyCompile: *next /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:177:16
+     13   46.4%        LazyCompile: *handle /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:136:31
+     13  100.0%          Function: ^router /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:46:18
+     13  100.0%            LazyCompile: *trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+      7   25.0%        Function: ^handle /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:136:31
+      7  100.0%          Function: ^router /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:46:18
+      7  100.0%            Function: ^handle /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/layer.js:86:49
+      3   10.7%        Function: ^session /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:179:26
+      3  100.0%          LazyCompile: *trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+      3  100.0%            LazyCompile: *next /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:177:16
+      3   10.7%        Function: ^error /Users/Matias/Desktop/Backend-v3/node_modules/serve-static/index.js:115:39
+      2   66.7%          LazyCompile: *emit node:events:460:44
+      2  100.0%            Function: ^error /Users/Matias/Desktop/Backend-v3/node_modules/send/index.js:267:45
+      1   33.3%          Function: ^emit node:events:460:44
+      1  100.0%            Function: ^error /Users/Matias/Desktop/Backend-v3/node_modules/send/index.js:267:45
+      1    3.6%        Function: ^jsonParser /Users/Matias/Desktop/Backend-v3/node_modules/body-parser/lib/types/json.js:98:30
+      1  100.0%          LazyCompile: *trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            LazyCompile: *next /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:177:16
+      1    3.6%        Function: ^initialize /Users/Matias/Desktop/Backend-v3/node_modules/passport/lib/middleware/initialize.js:51:29
+      1  100.0%          LazyCompile: *trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            LazyCompile: *next /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:177:16
+     27    1.4%      Function: ^fileURLToPath node:internal/url:1430:23
+     27  100.0%        LazyCompile: ~packageResolve node:internal/modules/esm/resolve:892:24
+     27  100.0%          Function: ^moduleResolve node:internal/modules/esm/resolve:985:23
+     27  100.0%            Function: ^defaultResolve node:internal/modules/esm/resolve:1124:30
+     25    1.3%      Function: ^deserializeObject /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/deserializer.js:65:27
+     24   96.0%        Function: ^deserialize /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/deserializer.js:36:21
+     24  100.0%          Function: ^deserialize /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/bson.js:161:21
+     23   95.8%            Function: ^parse /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/commands.js:426:10
+      1    4.2%            Function: ^parse /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/commands.js:222:10
+      1    4.0%        Function: ^deserializeObject /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%          Function: ^deserialize /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%            Function: ^deserialize /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/bson.js:161:21
+     22    1.1%      Function: ^hash /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:596:14
+     11   50.0%        Function: ^isModified /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:425:24
+      9   81.8%          Function: ^shouldSave /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:440:24
+      9  100.0%            Function: ^end /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:250:27
+      2   18.2%          Function: ^shouldSetCookie /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:464:29
+      2  100.0%            Function: ^<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:220:28
+     11   50.0%        Function: ^generate /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:363:22
+     11  100.0%          Function: ^session /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:179:26
+      6   54.5%            LazyCompile: *trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+      5   45.5%            Function: ^handle /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/layer.js:86:49
+     21    1.1%      Function: ^send /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:111:25
+     21  100.0%        Function: ^done /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:1033:27
+     21  100.0%          Function: ^tryHandleCache /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:254:24
+     21  100.0%            Function: ^exports.renderFile /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:441:31
+    107    2.9%    LazyCompile: *compileFunction node:vm:316:25
+    107  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1040:18
+    107  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+    107  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+    107  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+
+   1565   16.7%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+   1564   99.9%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+   1551   99.2%      Function: ^readSync node:fs:699:18
+   1551  100.0%        Function: ^tryReadSync node:fs:438:21
+   1550   99.9%          Function: ^readFileSync node:fs:459:22
+   1479   95.4%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+     45    2.9%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+
+    943   10.1%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    943  100.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+    937   99.4%      Function: ^compileFunction node:vm:316:25
+    927   98.9%        Function: ^wrapSafe node:internal/modules/cjs/loader:1040:18
+    924   99.7%          Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+    912   98.7%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+     12    1.3%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+     10    1.1%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1040:18
+     10  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1080:37
+     10  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+
+    528    5.6%  T node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+    528  100.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+    519   98.3%      Function: ^moduleStrategy node:internal/modules/esm/translators:114:56
+    519  100.0%        Function: ^moduleProvider node:internal/modules/esm/loader:459:28
+    519  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      9    1.7%      LazyCompile: ~moduleStrategy node:internal/modules/esm/translators:114:56
+      6   66.7%        LazyCompile: ~moduleProvider node:internal/modules/esm/loader:459:28
+      6  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      3   33.3%        Function: ^moduleProvider node:internal/modules/esm/loader:459:28
+      3  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+
+    474    5.1%  T __kernelrpc_mach_port_get_context
+
+    329    3.5%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    329  100.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+    269   81.8%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+    246   91.4%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+     23    9.3%          Function: ~<anonymous> node:http2:1:1
+     23  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     23    9.3%          Function: ~<anonymous> node:crypto:1:1
+     23  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     20    8.1%          Function: ~<anonymous> node:tls:1:1
+     20  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     19    7.7%          Function: ~<anonymous> node:_http_client:1:1
+     19  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     18    7.3%          Function: ~<anonymous> node:http:1:1
+     18  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     16    6.5%          Function: ~<anonymous> node:internal/http2/core:1:1
+     16  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     11    4.5%          LazyCompile: ~initCJSParse node:internal/modules/esm/translators:58:28
+     11  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:148:60
+     10    4.1%          Function: ~<anonymous> node:internal/child_process:1:1
+     10  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      8    3.3%          Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      8  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      8    3.3%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      8  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      8    3.3%          Function: ~<anonymous> node:child_process:1:1
+      8  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      8    3.3%          Function: ~<anonymous> node:assert:1:1
+      8  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      7    2.8%          Function: ~<anonymous> node:cluster:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      6    2.4%          Function: ~<anonymous> node:internal/http2/compat:1:1
+      6  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      6    2.4%          Function: ~<anonymous> node:_http_common:1:1
+      6  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      5    2.0%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      5  100.0%            LazyCompile: ~get node:crypto:294:8
+      4    1.6%          LazyCompile: ~lazyLoadStreams node:fs:2893:25
+      4  100.0%            LazyCompile: ~get ReadStream node:fs:3036:17
+      4    1.6%          Function: ~<anonymous> node:https:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4    1.6%          Function: ~<anonymous> node:dns:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4    1.6%          Function: ~<anonymous> node:_tls_wrap:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4    1.6%          Function: ~<anonymous> node:_tls_common:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    1.2%          Function: ~<anonymous> node:tty:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    1.2%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    1.2%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    1.2%          Function: ~<anonymous> node:dgram:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     14    5.2%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+     14  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+     14  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      9    3.3%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      6   66.7%          LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:44:26
+      6  100.0%            LazyCompile: ~builtinStrategy node:internal/modules/esm/translators:254:58
+      3   33.3%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      3  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:771:24
+     60   18.2%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     50   83.3%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+     10   20.0%          Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+     10  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      7   14.0%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:521:29
+      7  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      6   12.0%          Function: ~<anonymous> node:net:1:1
+      6  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      6   12.0%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      6  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      5   10.0%          Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      5  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      5   10.0%          Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      5  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    6.0%          LazyCompile: ~initializeReport node:internal/bootstrap/pre_execution:278:26
+      3  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      3    6.0%          Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    4.0%          LazyCompile: ~initializeSourceMapsHandlers node:internal/bootstrap/pre_execution:560:38
+      2  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      2    4.0%          Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    2.0%          Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     10   16.7%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      8   80.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2   20.0%          LazyCompile: ~setupInspectorHooks node:internal/bootstrap/pre_execution:329:29
+      2  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+
+    240    2.6%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+    240  100.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+    232   96.7%      Function: ^read node:internal/modules/package_json_reader:16:14
+    204   87.9%        Function: ^readPackage node:internal/modules/cjs/loader:301:21
+    146   71.6%          Function: ^resolveExports node:internal/modules/cjs/loader:483:24
+    146  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+     43   21.1%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:505:28
+     43  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      9    4.4%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:483:24
+      7   77.8%            Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      2   22.2%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:505:28
+      6    2.9%          Function: ^readPackageScope node:internal/modules/cjs/loader:332:26
+      6  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+     15    6.5%        LazyCompile: *readPackage node:internal/modules/cjs/loader:301:21
+     12   80.0%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:505:28
+     12  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      2   13.3%          LazyCompile: *readPackageScope node:internal/modules/cjs/loader:332:26
+      2  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1    6.7%          Function: ^resolveExports node:internal/modules/cjs/loader:483:24
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      9    3.9%        Function: ^getPackageConfig node:internal/modules/esm/resolve:197:26
+      6   66.7%          Function: ^packageResolve node:internal/modules/esm/resolve:892:24
+      6  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:985:23
+      3   33.3%          LazyCompile: ~packageResolve node:internal/modules/esm/resolve:892:24
+      3  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:985:23
+      3    1.3%        LazyCompile: ~readPackage node:internal/modules/cjs/loader:301:21
+      3  100.0%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:483:24
+      3  100.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:505:28
+      8    3.3%      LazyCompile: ~read node:internal/modules/package_json_reader:16:14
+      7   87.5%        LazyCompile: ~getPackageConfig node:internal/modules/esm/resolve:197:26
+      7  100.0%          LazyCompile: ~packageResolve node:internal/modules/esm/resolve:892:24
+      7  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:985:23
+      1   12.5%        LazyCompile: ~readPackage node:internal/modules/cjs/loader:301:21
+      1  100.0%          LazyCompile: ~readPackageScope node:internal/modules/cjs/loader:332:26
+      1  100.0%            LazyCompile: ~shouldUseESMLoader node:internal/modules/run_main:30:28
+
+    164    1.8%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+    164  100.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+    164  100.0%      Function: ^openSync node:fs:585:18
+    164  100.0%        Function: ^readFileSync node:fs:459:22
+    106   64.6%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+     96   90.6%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+     10    9.4%            LazyCompile: *Module._load node:internal/modules/cjs/loader:771:24
+     57   34.8%          Function: ^fileLoader /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:292:20
+     57  100.0%            Function: ^handleCache /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:210:21
+
+    132    1.4%  /usr/lib/system/libsystem_pthread.dylib
+     70   53.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      4    5.7%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:404:20
+      4  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:505:28
+      4  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      4  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      4    5.7%      LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:103:28
+      4  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      4  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      3    4.3%      t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1   33.3%        LazyCompile: ~createResolverPromise node:internal/dns/promises:254:31
+      1  100.0%          LazyCompile: ~query node:internal/dns/promises:283:17
+      1  100.0%            LazyCompile: ~resolveSRVRecord /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/connection_string.js:45:32
+      1   33.3%        Function: ^redefineProperties /Users/Matias/Desktop/Backend-v3/node_modules/knex/lib/knex-builder/make-knex.js:235:28
+      1  100.0%          LazyCompile: ~makeKnex /Users/Matias/Desktop/Backend-v3/node_modules/knex/lib/knex-builder/make-knex.js:97:18
+      1  100.0%            LazyCompile: ~knex /Users/Matias/Desktop/Backend-v3/node_modules/knex/lib/knex-builder/Knex.js:9:14
+      1   33.3%        Function: ^getOwn node:internal/bootstrap/loaders:187:16
+      1  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:304:14
+      1  100.0%            Function: ^<anonymous> node:internal/bootstrap/loaders:290:15
+      2    2.9%      LazyCompile: ~realpathSync node:fs:2460:22
+      2  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:404:20
+      2  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:505:28
+      2  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      2    2.9%      LazyCompile: ~nextTick node:internal/process/task_queues:104:18
+      2  100.0%        LazyCompile: ~immediate /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/helpers/immediate.js:14:36
+      2  100.0%          LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/connection.js:574:34
+      2  100.0%            LazyCompile: ~promiseOrCallback /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      2    2.9%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      2  100.0%        LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      2  100.0%          Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/finalhandler/node_modules/debug/src/node.js:1:1
+      2  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1080:37
+      2    2.9%      LazyCompile: ~createHttpErrorConstructor /Users/Matias/Desktop/Backend-v3/node_modules/http-errors/index.js:112:37
+      2  100.0%        Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/http-errors/index.js:1:1
+      2  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      2  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      2    2.9%      LazyCompile: ~createAppender /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/appenders/index.js:74:24
+      2  100.0%        LazyCompile: ~getAppender /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/appenders/index.js:59:21
+      2  100.0%          LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/appenders/index.js:139:41
+      2  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.4%      Script: ~<anonymous> file:///Users/Matias/Desktop/Backend-v3/node_modules/@faker-js/faker/dist/esm/chunk-ZJOZA6GK.mjs:1:1
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%          T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%            LazyCompile: ~run node:internal/modules/esm/module_job:188:12
+      1    1.4%      LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1040:18
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:992:33
+      1    1.4%      LazyCompile: ~validate_config /Users/Matias/Desktop/Backend-v3/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1  100.0%        LazyCompile: ~exports.find /Users/Matias/Desktop/Backend-v3/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%          Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/bcrypt/bcrypt.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1    1.4%      LazyCompile: ~toBin /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/commands.js:82:10
+      1  100.0%        Function: ^writeCommand /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/message_stream.js:40:17
+      1  100.0%          Function: ^write /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:404:15
+      1  100.0%            Function: ^command /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:251:12
+      1    1.4%      LazyCompile: ~setupWebCrypto node:internal/bootstrap/pre_execution:196:24
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.4%      LazyCompile: ~setupPerfHooks node:internal/bootstrap/pre_execution:324:24
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.4%      LazyCompile: ~serialize /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/bson.js:110:19
+      1  100.0%        LazyCompile: ~toBin /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/commands.js:82:10
+      1  100.0%          LazyCompile: ~writeCommand /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/message_stream.js:40:17
+      1  100.0%            LazyCompile: ~write /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:404:15
+      1    1.4%      LazyCompile: ~retry /Users/Matias/Desktop/Backend-v3/node_modules/graceful-fs/graceful-fs.js:397:16
+      1  100.0%        LazyCompile: ~resetQueue /Users/Matias/Desktop/Backend-v3/node_modules/graceful-fs/graceful-fs.js:383:21
+      1  100.0%          LazyCompile: ~closeSync /Users/Matias/Desktop/Backend-v3/node_modules/graceful-fs/graceful-fs.js:72:24
+      1  100.0%            Function: ^readFileSync node:fs:459:22
+      1    1.4%      LazyCompile: ~readSync node:fs:699:18
+      1  100.0%        LazyCompile: ~tryReadSync node:fs:438:21
+      1  100.0%          LazyCompile: ~readFileSync node:fs:459:22
+      1  100.0%            LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:194:34
+      1    1.4%      LazyCompile: ~readFile node:internal/fs/promises:811:24
+      1  100.0%        LazyCompile: ~getSource node:internal/modules/esm/load:32:25
+      1  100.0%          LazyCompile: ~defaultLoad node:internal/modules/esm/load:72:27
+      1  100.0%            LazyCompile: ~ObjectDefineProperty.__proto__ node:internal/modules/esm/loader:150:5
+      1    1.4%      LazyCompile: ~promisify node:internal/util:324:19
+      1  100.0%        LazyCompile: ~topologyConnect /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/mongo_client.js:134:37
+      1  100.0%          LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/mongo_client.js:114:43
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.4%      LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.4%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.4%      LazyCompile: ~onParseError node:internal/url:563:22
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%          LazyCompile: ~URL node:internal/url:632:14
+      1  100.0%            LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1124:30
+      1    1.4%      LazyCompile: ~isArrayIndex node:internal/modules/esm/resolve:561:22
+      1  100.0%        LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:567:30
+      1  100.0%          LazyCompile: ~packageExportsResolve node:internal/modules/esm/resolve:673:31
+      1  100.0%            LazyCompile: ~packageResolve node:internal/modules/esm/resolve:892:24
+      1    1.4%      LazyCompile: ~initSocketHandle node:net:263:26
+      1  100.0%        LazyCompile: ~Socket node:net:294:16
+      1  100.0%          LazyCompile: ~TLSSocket node:_tls_wrap:466:19
+      1  100.0%            LazyCompile: ~connect node:_tls_wrap:1602:35
+      1    1.4%      LazyCompile: ~inherits node:util:234:18
+      1  100.0%        LazyCompile: ~createClientErrorConstructor /Users/Matias/Desktop/Backend-v3/node_modules/http-errors/index.js:127:39
+      1  100.0%          LazyCompile: ~forEachCode /Users/Matias/Desktop/Backend-v3/node_modules/http-errors/index.js:259:38
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.4%      LazyCompile: ~handleOperationResult /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/server.js:327:42
+      1  100.0%        LazyCompile: ~onMessage /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1  100.0%          Function: ^<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:60:44
+      1  100.0%            Function: ^emit node:events:460:44
+      1    1.4%      LazyCompile: ~enable /Users/Matias/Desktop/Backend-v3/node_modules/finalhandler/node_modules/debug/src/debug.js:138:16
+      1  100.0%        Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/finalhandler/node_modules/debug/src/node.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1    1.4%      LazyCompile: ~db /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/mongo_client.js:214:7
+      1  100.0%        LazyCompile: ~_setClient /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/connection.js:858:20
+      1  100.0%          LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/connection.js:809:20
+      1  100.0%            LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/utils.js:348:18
+      1    1.4%      LazyCompile: ~contentType /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:619:32
+      1  100.0%        LazyCompile: ~send /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:111:25
+      1  100.0%          LazyCompile: ~done /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:1033:27
+      1  100.0%            LazyCompile: ~tryHandleCache /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:254:24
+      1    1.4%      LazyCompile: ~command /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:251:12
+      1  100.0%        LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:78:43
+      1  100.0%          LazyCompile: ~prepareHandshakeDocument /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:151:34
+      1  100.0%            LazyCompile: ~performInitialHandshake /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:62:33
+      1    1.4%      LazyCompile: ~add /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/schema.js:581:36
+      1  100.0%        LazyCompile: ~Schema /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/schema.js:96:16
+      1  100.0%          LazyCompile: ~Mongoose.model /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/index.js:542:36
+      1  100.0%            Script: ~<anonymous> file:///Users/Matias/Desktop/Backend-v3/config/configMongo.js:1:1
+      1    1.4%      LazyCompile: ~_flush node:_http_outgoing:1013:51
+      1  100.0%        LazyCompile: ~assignSocket node:_http_server:262:62
+      1  100.0%          LazyCompile: ~parserOnIncoming node:_http_server:880:26
+      1  100.0%            LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    1.4%      LazyCompile: ~URLImpl /Users/Matias/Desktop/Backend-v3/node_modules/whatwg-url/lib/URL-impl.js:7:14
+      1  100.0%        LazyCompile: ~exports.setup /Users/Matias/Desktop/Backend-v3/node_modules/whatwg-url/lib/URL.js:49:17
+      1  100.0%          LazyCompile: ~URL /Users/Matias/Desktop/Backend-v3/node_modules/whatwg-url/lib/URL.js:90:16
+      1  100.0%            LazyCompile: ~URLWithoutHost /Users/Matias/Desktop/Backend-v3/node_modules/mongodb-connection-string-url/lib/index.js:74:1
+      1    1.4%      LazyCompile: ~Topology /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/topology.js:41:16
+      1  100.0%        LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/mongo_client.js:114:43
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.4%      LazyCompile: ~Socket node:net:294:16
+      1  100.0%        LazyCompile: ~WriteStream node:tty:85:21
+      1  100.0%          LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1  100.0%            LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      1    1.4%      LazyCompile: ~Pager.set /Users/Matias/Desktop/Backend-v3/node_modules/memory-pager/index.js:81:32
+      1  100.0%        LazyCompile: ~Bitfield /Users/Matias/Desktop/Backend-v3/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%          LazyCompile: ~Bitfield /Users/Matias/Desktop/Backend-v3/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%            LazyCompile: ~read /Users/Matias/Desktop/Backend-v3/node_modules/saslprep/lib/memory-code-points.js:15:14
+      1    1.4%      LazyCompile: ~Pager._array /Users/Matias/Desktop/Backend-v3/node_modules/memory-pager/index.js:38:35
+      1  100.0%        LazyCompile: ~Pager.set /Users/Matias/Desktop/Backend-v3/node_modules/memory-pager/index.js:81:32
+      1  100.0%          LazyCompile: ~Bitfield /Users/Matias/Desktop/Backend-v3/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%            LazyCompile: ~Bitfield /Users/Matias/Desktop/Backend-v3/node_modules/sparse-bitfield/index.js:5:19
+      1    1.4%      LazyCompile: ~Mongoose /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/index.js:65:18
+      1  100.0%        Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1    1.4%      LazyCompile: ~Duplex node:internal/streams/duplex:54:16
+      1  100.0%        LazyCompile: ~Socket node:net:294:16
+      1  100.0%          LazyCompile: ~WriteStream node:tty:85:21
+      1  100.0%            LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1    1.4%      LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/monitor.js:226:12
+      1  100.0%        LazyCompile: ~MonitorInterval._executeAndReschedule /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/monitor.js:337:38
+      1  100.0%          LazyCompile: ~MonitorInterval /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/monitor.js:331:16
+      1  100.0%            LazyCompile: ~connect /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/monitor.js:84:12
+      1    1.4%      LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/monitor.js:178:73
+      1  100.0%        Function: ^onMessage /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1  100.0%          Function: ^<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:60:44
+      1  100.0%            Function: ^emit node:events:460:44
+      1    1.4%      LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/clustering.js:45:29
+      1  100.0%        LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/configuration.js:51:21
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            LazyCompile: ~configure /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/configuration.js:42:19
+      1    1.4%      Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.4%      Function: ~<anonymous> node:internal/fs/rimraf:1:1
+      1  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      1  100.0%            Function: ~<anonymous> node:internal/fs/promises:1:1
+      1    1.4%      Function: ~<anonymous> node:child_process:1:1
+      1  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      1  100.0%            Function: ~<anonymous> node:internal/cluster/primary:1:1
+      1    1.4%      Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/webidl-conversions/lib/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.4%      Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/tslib/tslib.js:41:11
+      1  100.0%        Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/tslib/tslib.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1    1.4%      Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/sift/lib/index.js:138:50
+      1  100.0%        Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/sift/lib/index.js:5:19
+      1  100.0%          Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/sift/lib/index.js:1:11
+      1  100.0%            Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/sift/lib/index.js:1:1
+      1    1.4%      Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.4%      Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/lodash/_stringToPath.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.4%      Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/fs-extra/lib/path-exists/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.4%      Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/connect-mongo/build/main/lib/MongoStore.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.4%      Function: ^store.generate /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:158:28
+      1  100.0%        Function: ^generate /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:363:22
+      1  100.0%          Function: ^session /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:179:26
+      1  100.0%            LazyCompile: *trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+      1    1.4%      Function: ^parse /Users/Matias/Desktop/Backend-v3/node_modules/content-type/index.js:106:16
+      1  100.0%        Function: ^setCharset /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/utils.js:248:41
+      1  100.0%          Function: ^send /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:111:25
+      1  100.0%            Function: ^done /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:1033:27
+      1    1.4%      Function: ^handleErrorFromBinding node:internal/fs/utils:343:32
+      1  100.0%        Function: ^readSync node:fs:699:18
+      1  100.0%          Function: ^tryReadSync node:fs:438:21
+      1  100.0%            Function: ^readFileSync node:fs:459:22
+      1    1.4%      Function: ^defaultTriggerAsyncIdScope node:internal/async_hooks:455:36
+      1  100.0%        LazyCompile: ~connectionListener node:_http_server:465:28
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            LazyCompile: ~onconnection node:net:1658:22
+      1    1.4%      Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      1  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:1020:36
+      1  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1  100.0%            Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/application.js:1:1
+     53   40.2%    LazyCompile: *compileFunction node:vm:316:25
+     53  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1040:18
+     53  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+     53  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+     53  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+
+    125    1.3%  t node::fs::Stat(v8::FunctionCallbackInfo<v8::Value> const&)
+    125  100.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+     79   63.2%      Function: ^statSync node:fs:1580:18
+     75   94.9%        Function: ^tryStat /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/view.js:174:17
+     75  100.0%          Function: ^resolve /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/view.js:146:42
+     75  100.0%            Function: ^lookup /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/view.js:104:40
+      4    5.1%        Function: ^tryStatSync node:internal/modules/esm/resolve:189:3
+      2   50.0%          LazyCompile: ~finalizeResolution node:internal/modules/esm/resolve:396:28
+      2  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:985:23
+      1   25.0%          LazyCompile: ~packageResolve node:internal/modules/esm/resolve:892:24
+      1  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:985:23
+      1   25.0%          Function: ^packageResolve node:internal/modules/esm/resolve:892:24
+      1  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:985:23
+     46   36.8%      Function: ^stat node:fs:1504:14
+     46  100.0%        Function: ^sendFile /Users/Matias/Desktop/Backend-v3/node_modules/send/index.js:712:51
+     46  100.0%          Function: ^pipe /Users/Matias/Desktop/Backend-v3/node_modules/send/index.js:506:43
+     46  100.0%            Function: ^serveStatic /Users/Matias/Desktop/Backend-v3/node_modules/serve-static/index.js:72:31
+
+    120    1.3%  T _host_request_notification
+     75   62.5%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      2    2.7%      LazyCompile: ~stringify node:internal/modules/esm/translators:94:19
+      2  100.0%        LazyCompile: ~moduleStrategy node:internal/modules/esm/translators:114:56
+      2  100.0%          LazyCompile: ~moduleProvider node:internal/modules/esm/loader:459:28
+      2  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      2    2.7%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      2  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    2.7%      Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.3%      Script: ~<anonymous> file:///Users/Matias/Desktop/Backend-v3/node_modules/@faker-js/faker/dist/esm/chunk-PHKD4ARO.mjs:1:1
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%          T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%            LazyCompile: ~run node:internal/modules/esm/module_job:188:12
+      1    1.3%      LazyCompile: ~writeOrBuffer node:internal/streams/writable:367:23
+      1  100.0%        LazyCompile: ~_write node:internal/streams/writable:285:16
+      1  100.0%          LazyCompile: ~Writable.write node:internal/streams/writable:335:36
+      1  100.0%            LazyCompile: ~ondata node:internal/streams/readable:752:18
+      1    1.3%      LazyCompile: ~writeHead node:_http_server:292:19
+      1  100.0%        LazyCompile: ~writeHead /Users/Matias/Desktop/Backend-v3/node_modules/on-headers/index.js:28:29
+      1  100.0%          LazyCompile: ~_implicitHeader node:_http_server:287:68
+      1  100.0%            LazyCompile: ~write_ node:_http_outgoing:790:16
+      1    1.3%      LazyCompile: ~supportsOpMsg /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:385:23
+      1  100.0%        LazyCompile: ~command /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:251:12
+      1  100.0%          LazyCompile: ~checkServer /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/monitor.js:143:21
+      1  100.0%            LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/monitor.js:226:12
+      1    1.3%      LazyCompile: ~streamIdentifier /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:392:26
+      1  100.0%        LazyCompile: ~Connection /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:37:16
+      1  100.0%          LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:31:63
+      1  100.0%            LazyCompile: ~callback /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:269:31
+      1    1.3%      LazyCompile: ~ssl.onhandshakedone node:_tls_wrap:728:27
+      1    1.3%      LazyCompile: ~serializeInto /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/serializer.js:553:23
+      1  100.0%        Function: ^serializeObject /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/serializer.js:260:25
+      1  100.0%          LazyCompile: ~serializeInto /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/serializer.js:553:23
+      1  100.0%            LazyCompile: ~serialize /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/bson.js:110:19
+      1    1.3%      LazyCompile: ~serializeBinary /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/serializer.js:462:25
+      1  100.0%        Function: ^serializeInto /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/serializer.js:553:23
+      1  100.0%          Function: ^serializeObject /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/serializer.js:260:25
+      1  100.0%            Function: ^serializeInto /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/serializer.js:553:23
+      1    1.3%      LazyCompile: ~send /Users/Matias/Desktop/Backend-v3/node_modules/send/index.js:602:43
+      1  100.0%        LazyCompile: ~onstat /Users/Matias/Desktop/Backend-v3/node_modules/send/index.js:717:33
+      1  100.0%          LazyCompile: ~<anonymous> node:fs:205:10
+      1    1.3%      LazyCompile: ~resolve node:path:1091:10
+      1  100.0%        LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:103:28
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.3%      LazyCompile: ~readFile node:internal/fs/promises:811:24
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~promiseOrCallback /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1  100.0%        LazyCompile: ~Mongoose._promiseOrCallback /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/index.js:1265:49
+      1  100.0%          LazyCompile: ~ensureIndexes /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/model.js:1755:45
+      1  100.0%            LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/model.js:1358:5
+      1    1.3%      LazyCompile: ~prepareHandshakeDocument /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:151:34
+      1  100.0%        LazyCompile: ~performInitialHandshake /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:62:33
+      1  100.0%          LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:31:63
+      1  100.0%            LazyCompile: ~callback /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:269:31
+      1    1.3%      LazyCompile: ~patch /Users/Matias/Desktop/Backend-v3/node_modules/graceful-fs/graceful-fs.js:102:16
+      1  100.0%        Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/graceful-fs/graceful-fs.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1    1.3%      LazyCompile: ~parse node:internal/deps/cjs-module-lexer/dist/lexer:1:131
+      1  100.0%        LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:194:34
+      1  100.0%          Function: ^commonjsStrategy node:internal/modules/esm/translators:148:60
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~onMessage /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1  100.0%        Function: ^<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:60:44
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            LazyCompile: ~processIncomingData /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/message_stream.js:84:29
+      1    1.3%      LazyCompile: ~next /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/route.js:116:16
+      1  100.0%        Function: ^dispatch /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/route.js:98:45
+      1  100.0%          Function: ^handle /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:280:64
+      1    1.3%      LazyCompile: ~msFromTimeSpec node:internal/fs/utils:449:24
+      1  100.0%        LazyCompile: ~getStatsFromBinding node:internal/fs/utils:533:29
+      1  100.0%          LazyCompile: ~statSync node:fs:1580:18
+      1  100.0%            LazyCompile: ~fileExists node:internal/modules/esm/resolve:288:20
+      1    1.3%      LazyCompile: ~moduleProvider node:internal/modules/esm/loader:459:28
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~module.exports /Users/Matias/Desktop/Backend-v3/node_modules/utils-merge/index.js:16:36
+      1  100.0%        LazyCompile: ~render /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/application.js:548:29
+      1  100.0%          LazyCompile: ~render /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:1016:29
+      1  100.0%            LazyCompile: ~<anonymous> file:///Users/Matias/Desktop/Backend-v3/routes/info.js:19:25
+      1    1.3%      LazyCompile: ~module.exports /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/helpers/isMongooseObject.js:13:26
+      1  100.0%        LazyCompile: ~clone /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/helpers/clone.js:29:15
+      1  100.0%          LazyCompile: ~Schema.path /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/schema.js:895:33
+      1  100.0%            LazyCompile: ~add /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/schema.js:581:36
+      1    1.3%      LazyCompile: ~listenInCluster node:net:1470:25
+      1  100.0%        LazyCompile: ~Server.listen node:net:1513:35
+      1  100.0%          LazyCompile: ~<anonymous> file:///Users/Matias/Desktop/Backend-v3/server.js:168:14
+      1  100.0%            LazyCompile: ~<anonymous> file:///Users/Matias/Desktop/Backend-v3/config/configMongo.js:7:9
+      1    1.3%      LazyCompile: ~isstats /Users/Matias/Desktop/Backend-v3/node_modules/etag/index.js:104:18
+      1  100.0%        Function: ^etag /Users/Matias/Desktop/Backend-v3/node_modules/etag/index.js:70:15
+      1  100.0%          Function: ^generateETag /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/utils.js:273:32
+      1  100.0%            Function: ^send /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:111:25
+      1    1.3%      LazyCompile: ~isFileType node:fs:213:20
+      1  100.0%        LazyCompile: ~realpathSync node:fs:2460:22
+      1  100.0%          LazyCompile: ~toRealPath node:internal/modules/cjs/loader:404:20
+      1  100.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:505:28
+      1    1.3%      LazyCompile: ~initializeGlobalConsole node:internal/console/constructor:687:33
+      1  100.0%        LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:103:28
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.3%      LazyCompile: ~initSearchParams node:internal/url:1030:26
+      1  100.0%        Function: ^onParseComplete node:internal/url:544:25
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            LazyCompile: ~URL node:internal/url:632:14
+      1    1.3%      LazyCompile: ~init /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/application.js:64:25
+      1  100.0%        LazyCompile: ~createApplication /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/express.js:37:27
+      1  100.0%          Script: ~<anonymous> file:///Users/Matias/Desktop/Backend-v3/server.js:1:1
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~handle /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%        LazyCompile: ~trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:280:64
+      1  100.0%            LazyCompile: ~process_params /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:338:47
+      1    1.3%      LazyCompile: ~getLogger /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/log4js.js:152:19
+      1  100.0%        Script: ~<anonymous> file:///Users/Matias/Desktop/Backend-v3/config/configLog4Js.js:1:1
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.3%      LazyCompile: ~get roundTripTime /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/monitor.js:276:22
+      1  100.0%        LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/monitor.js:178:73
+      1  100.0%          Function: ^onMessage /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1  100.0%            Function: ^<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:60:44
+      1    1.3%      LazyCompile: ~get isSRV /Users/Matias/Desktop/Backend-v3/node_modules/mongodb-connection-string-url/lib/index.js:162:14
+      1  100.0%        LazyCompile: ~ConnectionString /Users/Matias/Desktop/Backend-v3/node_modules/mongodb-connection-string-url/lib/index.js:82:16
+      1  100.0%          LazyCompile: ~parseOptions /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/connection_string.js:195:22
+      1  100.0%            LazyCompile: ~MongoClient /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/mongo_client.js:43:16
+      1    1.3%      LazyCompile: ~get href node:internal/url:747:11
+      1  100.0%        LazyCompile: ~<anonymous> node:internal/modules/run_main:55:29
+      1  100.0%          LazyCompile: ~loadESM node:internal/process/esm_loader:88:41
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~get /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/bson.js:32:78
+      1  100.0%        Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1    1.3%      LazyCompile: ~formatValue node:internal/util/inspect:750:21
+      1  100.0%        LazyCompile: ~inspect node:internal/util/inspect:295:17
+      1  100.0%          LazyCompile: ~createAppender /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/appenders/index.js:74:24
+      1  100.0%            LazyCompile: ~getAppender /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/appenders/index.js:59:21
+      1    1.3%      LazyCompile: ~forEachCode /Users/Matias/Desktop/Backend-v3/node_modules/http-errors/index.js:259:38
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%          LazyCompile: ~populateConstructorExports /Users/Matias/Desktop/Backend-v3/node_modules/http-errors/index.js:258:37
+      1  100.0%            Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/http-errors/index.js:1:1
+      1    1.3%      LazyCompile: ~finish node:internal/streams/writable:747:16
+      1  100.0%        LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.3%      LazyCompile: ~de file:///Users/Matias/Desktop/Backend-v3/node_modules/@faker-js/faker/dist/esm/chunk-G6GIS7LZ.mjs:12:15055
+      1  100.0%        Script: ~<anonymous> file:///Users/Matias/Desktop/Backend-v3/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.3%      LazyCompile: ~createHash node:crypto:129:20
+      1  100.0%        LazyCompile: ~passwordDigest /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/auth/scram.js:182:24
+      1  100.0%          LazyCompile: ~continueScramConversation /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%            LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1    1.3%      LazyCompile: ~createAppender /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/appenders/index.js:74:24
+      1  100.0%        LazyCompile: ~getAppender /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/appenders/index.js:59:21
+      1  100.0%          LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/appenders/index.js:139:41
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~create /Users/Matias/Desktop/Backend-v3/node_modules/connect-mongo/build/main/lib/MongoStore.js:135:18
+      1  100.0%        Script: ~<anonymous> file:///Users/Matias/Desktop/Backend-v3/server.js:1:1
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.3%      LazyCompile: ~connect /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/topology.js:155:12
+      1  100.0%        LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/mongo_client.js:136:49
+      1  100.0%          LazyCompile: ~<anonymous> node:internal/util:347:24
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:148:60
+      1  100.0%        LazyCompile: ~moduleProvider node:internal/modules/esm/loader:459:28
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:194:34
+      1  100.0%        LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:148:60
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~channel node:diagnostics_channel:97:17
+      1  100.0%        Function: ~<anonymous> node:_http_client:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      1    1.3%      LazyCompile: ~appendersForCategory /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/categories.js:197:30
+      1  100.0%        LazyCompile: ~sendLogEventToAppender /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/log4js.js:36:32
+      1  100.0%          LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/clustering.js:25:21
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~addLevelMethods /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/logger.js:221:25
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%          Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/logger.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1    1.3%      LazyCompile: ~_addListener node:events:541:22
+      1  100.0%        LazyCompile: ~addListener node:events:604:58
+      1  100.0%          LazyCompile: ~getStdout node:internal/bootstrap/switches/is_main_thread:146:19
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~__extends /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/binary.js:9:21
+      1  100.0%        Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/binary.js:268:36
+      1  100.0%          Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/binary.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1    1.3%      LazyCompile: ~Socket.connect node:net:1018:36
+      1  100.0%        LazyCompile: ~connect node:_tls_wrap:1602:35
+      1  100.0%          LazyCompile: ~makeConnection /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:256:24
+      1  100.0%            LazyCompile: ~connect /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:30:17
+      1    1.3%      LazyCompile: ~Socket._read node:net:642:34
+      1  100.0%        LazyCompile: ~<anonymous> node:net:647:26
+      1  100.0%          LazyCompile: ~onceWrapper node:events:622:21
+      1  100.0%            Function: ^emit node:events:460:44
+      1    1.3%      LazyCompile: ~Socket node:net:294:16
+      1  100.0%        Function: ^TLSSocket node:_tls_wrap:466:19
+      1  100.0%          Function: ^connect node:_tls_wrap:1602:35
+      1  100.0%            Function: ^makeConnection /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:256:24
+      1    1.3%      LazyCompile: ~Server /Users/Matias/Desktop/Backend-v3/node_modules/socket.io/dist/index.js:79:16
+      1  100.0%        Script: ~<anonymous> file:///Users/Matias/Desktop/Backend-v3/server.js:1:1
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.3%      LazyCompile: ~ReadPreference /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/read_preference.js:26:16
+      1  100.0%        Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/read_preference.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1    1.3%      LazyCompile: ~ObjectId /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/objectid.js:24:22
+      1  100.0%        Function: ^deserializeObject /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%          Function: ^deserializeObject /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%            Function: ^deserialize /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/deserializer.js:36:21
+      1    1.3%      LazyCompile: ~Module._load node:internal/modules/cjs/loader:771:24
+      1  100.0%        LazyCompile: ~<anonymous> node:internal/modules/esm/translators:161:67
+      1  100.0%          T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%            LazyCompile: ~run node:internal/modules/esm/module_job:188:12
+      1    1.3%      LazyCompile: ~Long.add /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/long.js:252:35
+      1  100.0%        LazyCompile: ~Long.subtract /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/long.js:720:40
+      1  100.0%          LazyCompile: ~Long.sub /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/long.js:726:35
+      1  100.0%            LazyCompile: ~Long.compare /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/long.js:291:39
+      1    1.3%      LazyCompile: ~GetIntrinsic /Users/Matias/Desktop/Backend-v3/node_modules/get-intrinsic/index.js:253:39
+      1  100.0%        LazyCompile: ~callBoundIntrinsic /Users/Matias/Desktop/Backend-v3/node_modules/call-bind/callBound.js:9:45
+      1  100.0%          Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/side-channel/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1    1.3%      LazyCompile: ~Gauge._computeTheme /Users/Matias/Desktop/Backend-v3/node_modules/gauge/index.js:85:42
+      1  100.0%        LazyCompile: ~Gauge /Users/Matias/Desktop/Backend-v3/node_modules/gauge/index.js:19:16
+      1  100.0%          Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/npmlog/log.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1    1.3%      LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection_pool.js:361:48
+      1  100.0%        LazyCompile: ~callback /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:63:31
+      1  100.0%          LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:128:44
+      1  100.0%            LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/auth/scram.js:152:83
+      1    1.3%      LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection_pool.js:302:27
+      1  100.0%        LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/server.js:211:101
+      1  100.0%          LazyCompile: ~handleOperationResult /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/server.js:327:42
+      1  100.0%            LazyCompile: ~onMessage /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1    1.3%      LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/categories.js:72:40
+      1  100.0%        LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/configuration.js:47:34
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            LazyCompile: ~configure /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/configuration.js:42:19
+      1    1.3%      LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/dotenv/lib/main.js:77:42
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%          LazyCompile: ~config /Users/Matias/Desktop/Backend-v3/node_modules/dotenv/lib/main.js:58:17
+      1  100.0%            Script: ~<anonymous> file:///Users/Matias/Desktop/Backend-v3/server.js:1:1
+      1    1.3%      Function: ~<anonymous> node:dns:1:1
+      1  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%          Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      1  100.0%            Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1    1.3%      Function: ~<anonymous> node:_http_outgoing:1:1
+      1  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      1  100.0%            Function: ~<anonymous> node:_http_client:1:1
+      1    1.3%      Function: ~<anonymous> node:_http_agent:1:1
+      1  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      1  100.0%            Function: ~<anonymous> node:http:1:1
+      1    1.3%      Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/query.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.3%      Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:771:24
+      1    1.3%      Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      1  100.0%        Function: ^writevGeneric node:internal/stream_base_commons:122:23
+      1  100.0%          Function: ^Socket._writeGeneric node:net:848:42
+      1  100.0%            Function: ^Socket._writev node:net:880:36
+      1    1.3%      Function: ^<anonymous> node:internal/validators:245:42
+      1  100.0%        Function: ^compileFunction node:vm:316:25
+      1  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1040:18
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+     27   22.5%    LazyCompile: *compileFunction node:vm:316:25
+     27  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1040:18
+     27  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+     27  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+     27  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+
+    110    1.2%  /usr/lib/system/libsystem_malloc.dylib
+     67   60.9%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+     14   20.9%      t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      4   28.6%        Function: ^readPackage node:internal/modules/cjs/loader:301:21
+      3   75.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:332:26
+      2   66.7%            Function: ^trySelf node:internal/modules/cjs/loader:452:17
+      1   33.3%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1   25.0%          Function: ^tryPackage node:internal/modules/cjs/loader:349:20
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      2   14.3%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      2  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:395:17
+      2  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:411:23
+      2   14.3%        Function: ^FastBuffer node:internal/buffer:958:14
+      2  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      2  100.0%            Function: ^allocate node:buffer:403:18
+      1    7.1%        LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:499:36
+      1  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:567:30
+      1  100.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:567:30
+      1    7.1%        LazyCompile: ~enable /Users/Matias/Desktop/Backend-v3/node_modules/knex/node_modules/debug/src/common.js:162:17
+      1  100.0%          LazyCompile: ~setup /Users/Matias/Desktop/Backend-v3/node_modules/knex/node_modules/debug/src/common.js:7:15
+      1  100.0%            Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/knex/node_modules/debug/src/node.js:1:1
+      1    7.1%        LazyCompile: ~compile /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:571:21
+      1  100.0%          LazyCompile: ~compile /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:381:35
+      1  100.0%            LazyCompile: ~handleCache /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:210:21
+      1    7.1%        Function: ^writeOrBuffer node:internal/streams/writable:367:23
+      1  100.0%          Function: ^_write node:internal/streams/writable:285:16
+      1  100.0%            Function: ^Writable.write node:internal/streams/writable:335:36
+      1    7.1%        Function: ^debug /Users/Matias/Desktop/Backend-v3/node_modules/debug/src/common.js:66:17
+      1  100.0%          Function: ^configForCategory /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/categories.js:173:27
+      1  100.0%            Function: ^getEnableCallStackForCategory /Users/Matias/Desktop/Backend-v3/node_modules/log4js/lib/categories.js:205:39
+      1    7.1%        Function: ^compileFunction node:vm:316:25
+      1  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1040:18
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      2    3.0%      LazyCompile: *realpathSync node:fs:2460:22
+      2  100.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:505:28
+      2  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      1   50.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:771:24
+      1   50.0%            Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      2    3.0%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:505:28
+      2  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      2  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      2  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1020:36
+      2    3.0%      Function: ^store.generate /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:158:28
+      2  100.0%        Function: ^generate /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:363:22
+      2  100.0%          Function: ^session /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:179:26
+      2  100.0%            Function: ^handle /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/layer.js:86:49
+      2    3.0%      Function: ^randomBytes node:internal/crypto/random:93:21
+      2  100.0%        Function: ^randomBytesSync /Users/Matias/Desktop/Backend-v3/node_modules/random-bytes/index.js:72:25
+      2  100.0%          Function: ^uidSync /Users/Matias/Desktop/Backend-v3/node_modules/uid-safe/index.js:75:18
+      2  100.0%            Function: ^generateSessionId /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:518:27
+      2    3.0%      Function: ^hash /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:596:14
+      2  100.0%        Function: ^isModified /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:425:24
+      2  100.0%          Function: ^shouldSave /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:440:24
+      2  100.0%            Function: ^end /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:250:27
+      2    3.0%      Function: ^getPathFromURLPosix node:internal/url:1412:29
+      2  100.0%        Function: ^fileURLToPath node:internal/url:1430:23
+      1   50.0%          Function: ^getPackageScopeConfig node:internal/modules/esm/resolve:253:31
+      1  100.0%            Function: ^getPackageType node:internal/modules/esm/resolve:843:24
+      1   50.0%          Function: ^finalizeEsmResolution node:internal/modules/cjs/loader:962:31
+      1  100.0%            Function: ^resolveExports node:internal/modules/cjs/loader:483:24
+      2    3.0%      Function: ^decode /Users/Matias/Desktop/Backend-v3/node_modules/send/index.js:997:17
+      2  100.0%        Function: ^pipe /Users/Matias/Desktop/Backend-v3/node_modules/send/index.js:506:43
+      2  100.0%          Function: ^serveStatic /Users/Matias/Desktop/Backend-v3/node_modules/serve-static/index.js:72:31
+      1   50.0%            LazyCompile: *trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+      1   50.0%            Function: ^handle /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/layer.js:86:49
+      2    3.0%      Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      2  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:1020:36
+      2  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1   50.0%            Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/utils.js:1:1
+      1   50.0%            Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/@aws-sdk/client-cognito-identity/dist-cjs/CognitoIdentity.js:1:1
+      1    1.5%      LazyCompile: ~toBin /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/commands.js:345:10
+      1  100.0%        Function: ^writeCommand /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/message_stream.js:40:17
+      1  100.0%          Function: ^write /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:404:15
+      1  100.0%            Function: ^command /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:251:12
+      1    1.5%      LazyCompile: ~testEnabled node:internal/util/debuglog:32:19
+      1  100.0%        LazyCompile: ~init node:internal/util/debuglog:72:16
+      1  100.0%          LazyCompile: ~debug node:internal/util/debuglog:76:15
+      1  100.0%            LazyCompile: ~logger node:internal/util/debuglog:95:18
+      1    1.5%      LazyCompile: ~serializeObject /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/serializer.js:260:25
+      1  100.0%        LazyCompile: ~serializeInto /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/serializer.js:553:23
+      1  100.0%          LazyCompile: ~serializeObject /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/serializer.js:260:25
+      1  100.0%            LazyCompile: ~serializeInto /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/serializer.js:553:23
+      1    1.5%      LazyCompile: ~selectServer /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/topology.js:254:17
+      1  100.0%        LazyCompile: ~connect /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/topology.js:155:12
+      1  100.0%          LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/mongo_client.js:136:49
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/util:347:24
+      1    1.5%      LazyCompile: ~realpathSync node:fs:2460:22
+      1  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:404:20
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:505:28
+      1  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1    1.5%      LazyCompile: ~readFileHandle node:internal/fs/promises:365:30
+      1  100.0%        Function: ^readFile node:internal/fs/promises:811:24
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.5%      LazyCompile: ~maybeCallback /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/utils.js:335:23
+      1  100.0%        LazyCompile: ~endSession /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sessions.js:130:15
+      1  100.0%          LazyCompile: ~executeOperationAsync /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/operations/execute_operation.js:15:37
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.5%      LazyCompile: ~keylogNewListener node:_tls_wrap:696:29
+      1  100.0%        Function: ^emit node:events:460:44
+      1  100.0%          Function: ^_addListener node:events:541:22
+      1  100.0%            Function: ^addListener node:events:604:58
+      1    1.5%      LazyCompile: ~exports.isMongooseArray /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/types/array/isMongooseArray.js:3:35
+      1  100.0%        LazyCompile: ~module.exports /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/helpers/isMongooseObject.js:13:26
+      1  100.0%          LazyCompile: ~clone /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/helpers/clone.js:29:15
+      1  100.0%            LazyCompile: ~Schema.path /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/schema.js:895:33
+      1    1.5%      LazyCompile: ~deserialize /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%        LazyCompile: ~deserialize /Users/Matias/Desktop/Backend-v3/node_modules/bson/lib/bson.js:161:21
+      1  100.0%          LazyCompile: ~parse /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/commands.js:222:10
+      1  100.0%            LazyCompile: ~onMessage /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1    1.5%      LazyCompile: ~de file:///Users/Matias/Desktop/Backend-v3/node_modules/@faker-js/faker/dist/esm/chunk-G6GIS7LZ.mjs:12:15055
+      1  100.0%        Script: ~<anonymous> file:///Users/Matias/Desktop/Backend-v3/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.5%      LazyCompile: ~compile /Users/Matias/Desktop/Backend-v3/node_modules/proxy-addr/index.js:84:18
+      1  100.0%        LazyCompile: ~exports.compileTrust /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/utils.js:217:32
+      1  100.0%          LazyCompile: ~set /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/application.js:359:23
+      1  100.0%            LazyCompile: ~defaultConfiguration /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/application.js:77:57
+      1    1.5%      LazyCompile: ~buildAllowedFlags node:internal/process/per_thread:266:27
+      1  100.0%        LazyCompile: ~get node:internal/bootstrap/node:280:6
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            Function: ^getOwn node:internal/bootstrap/loaders:187:16
+      1    1.5%      LazyCompile: ~appendFileSync node:fs:2259:24
+      1  100.0%        LazyCompile: ~_renewWriteStream /Users/Matias/Desktop/Backend-v3/node_modules/streamroller/lib/RollingFileWriteStream.js:261:20
+      1  100.0%          LazyCompile: ~RollingFileWriteStream /Users/Matias/Desktop/Backend-v3/node_modules/streamroller/lib/RollingFileWriteStream.js:40:14
+      1  100.0%            LazyCompile: ~RollingFileStream /Users/Matias/Desktop/Backend-v3/node_modules/streamroller/lib/RollingFileStream.js:5:14
+      1    1.5%      LazyCompile: ~Socket.read node:net:700:33
+      1  100.0%        LazyCompile: ~Socket node:net:294:16
+      1  100.0%          LazyCompile: ~ReadStream node:tty:47:20
+      1  100.0%            LazyCompile: ~getStdin node:internal/bootstrap/switches/is_main_thread:189:18
+      1    1.5%      LazyCompile: ~Db /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/db.js:84:16
+      1  100.0%        LazyCompile: ~db /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/mongo_client.js:214:7
+      1  100.0%          LazyCompile: ~_setClient /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/connection.js:858:20
+      1  100.0%            LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/connection.js:809:20
+      1    1.5%      LazyCompile: ~AbstractOperation /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/operations/operation.js:26:16
+      1  100.0%        LazyCompile: ~CommandOperation /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/operations/command.js:13:16
+      1  100.0%          LazyCompile: ~CreateCollectionOperation /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/operations/create_collection.js:32:16
+      1  100.0%            LazyCompile: ~createCollection /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/db.js:156:21
+      1    1.5%      LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/connection.js:567:18
+      1  100.0%        LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/model.js:1470:52
+      1  100.0%          LazyCompile: ~promiseOrCallback /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1  100.0%            LazyCompile: ~Mongoose._promiseOrCallback /Users/Matias/Desktop/Backend-v3/node_modules/mongoose/lib/index.js:1265:49
+      1    1.5%      LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connection_pool.js:90:26
+      1  100.0%        LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.5%      LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/lodash/_shortOut.js:21:18
+      1  100.0%        LazyCompile: ~baseRest /Users/Matias/Desktop/Backend-v3/node_modules/lodash/_baseRest.js:13:18
+      1  100.0%          Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/lodash/defaults.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1    1.5%      LazyCompile: *readPackage node:internal/modules/cjs/loader:301:21
+      1  100.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:505:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      1    1.5%      LazyCompile: *next /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:177:16
+      1  100.0%        Function: ^handle /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:136:31
+      1  100.0%          Function: ^router /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:46:18
+      1  100.0%            Function: ^handle /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/layer.js:86:49
+      1    1.5%      LazyCompile: *FastBuffer node:internal/buffer:958:14
+      1  100.0%        Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1  100.0%          Function: ^createPool node:buffer:155:20
+      1  100.0%            Function: ^fromStringFast node:buffer:418:24
+      1    1.5%      Function: ~<anonymous> :1:20
+      1  100.0%        LazyCompile: ~anonymous /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:695:59
+      1  100.0%          LazyCompile: ~tryHandleCache /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%            LazyCompile: ~exports.renderFile /Users/Matias/Desktop/Backend-v3/node_modules/ejs/lib/ejs.js:441:31
+      1    1.5%      Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/connection_string.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.5%      Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/lodash/_nativeKeys.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.5%      Function: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/@mapbox/node-pre-gyp/node_modules/semver/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:771:24
+      1    1.5%      Function: ^wrapSafe node:internal/modules/cjs/loader:1040:18
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.5%      Function: ^session /Users/Matias/Desktop/Backend-v3/node_modules/express-session/index.js:179:26
+      1  100.0%        Function: ^handle /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          Function: ^trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            LazyCompile: *next /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:177:16
+      1    1.5%      Function: ^router /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:46:18
+      1  100.0%        Function: ^handle /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          Function: ^trim_prefix /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            LazyCompile: *next /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/router/index.js:177:16
+      1    1.5%      Function: ^realpathSync node:fs:2460:22
+      1  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:404:20
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:395:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:411:23
+      1    1.5%      Function: ^readPackage node:internal/modules/cjs/loader:301:21
+      1  100.0%        Function: ^resolveExports node:internal/modules/cjs/loader:483:24
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      1    1.5%      Function: ^parseSslOptions /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:237:25
+      1  100.0%        LazyCompile: ~makeConnection /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:256:24
+      1  100.0%          LazyCompile: ~connect /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/connect.js:30:17
+      1  100.0%            LazyCompile: ~measureRoundTripTime /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/sdam/monitor.js:288:30
+      1    1.5%      Function: ^parse /Users/Matias/Desktop/Backend-v3/node_modules/content-type/index.js:106:16
+      1  100.0%        Function: ^setCharset /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/utils.js:248:41
+      1  100.0%          Function: ^send /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:111:25
+      1  100.0%            Function: ^done /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:1033:27
+      1    1.5%      Function: ^fromString node:buffer:437:20
+      1  100.0%        LazyCompile: ~from node:buffer:301:28
+      1  100.0%          LazyCompile: ~continueScramConversation /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%            LazyCompile: ~<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1    1.5%      Function: ^fresh /Users/Matias/Desktop/Backend-v3/node_modules/fresh/index.js:33:16
+      1  100.0%        Function: ^<anonymous> /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/request.js:467:36
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            Function: ^send /Users/Matias/Desktop/Backend-v3/node_modules/express/lib/response.js:111:25
+      1    1.5%      Function: ^NodeError node:internal/errors:355:28
+      1  100.0%        LazyCompile: ~onParseError node:internal/url:563:22
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            Function: ^URL node:internal/url:632:14
+     15   13.6%    LazyCompile: *compileFunction node:vm:316:25
+     15  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1040:18
+     15  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+     15  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+     15  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+

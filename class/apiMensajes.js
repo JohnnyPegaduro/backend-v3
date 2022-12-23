@@ -1,4 +1,5 @@
 import fs from "fs";
+import logger from "../config/configLog4Js.js";
 
 class Message {
     constructor (file){
@@ -12,7 +13,7 @@ class Message {
             const mensajes = JSON.parse(data);
             return mensajes;
         } catch (e){
-            console.log(e);
+            logger.error(`Api de mensajes: ${e}`);
         }
     }
 
@@ -39,7 +40,7 @@ class Message {
             const dataString = JSON.stringify(dataParse);
             await fs.promises.writeFile(this.file, dataString);
         } catch (e) {
-            console.log(e);
+            logger.error(`Api de mensajes: ${e}`);
         }
     }
 }

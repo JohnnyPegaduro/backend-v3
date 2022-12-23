@@ -1,0 +1,169 @@
+{
+  "aggregate": {
+    "counters": {
+      "vusers.created_by_name.0": 50,
+      "vusers.created": 50,
+      "http.requests": 1000,
+      "http.codes.200": 1000,
+      "http.responses": 1000,
+      "vusers.failed": 0,
+      "vusers.completed": 50
+    },
+    "rates": {
+      "http.request_rate": 80
+    },
+    "firstCounterAt": 1671306499938,
+    "firstHistogramAt": 1671306500012,
+    "lastCounterAt": 1671306506499,
+    "lastHistogramAt": 1671306506499,
+    "firstMetricAt": 1671306499938,
+    "lastMetricAt": 1671306506499,
+    "period": 1671306500000,
+    "summaries": {
+      "http.response_time": {
+        "min": 12,
+        "max": 823,
+        "count": 1000,
+        "p50": 267.8,
+        "median": 267.8,
+        "p75": 327.1,
+        "p90": 415.8,
+        "p95": 450.4,
+        "p99": 632.8,
+        "p999": 804.5
+      },
+      "vusers.session_length": {
+        "min": 4051.8,
+        "max": 5886.4,
+        "count": 50,
+        "p50": 5711.5,
+        "median": 5711.5,
+        "p75": 5826.9,
+        "p90": 5826.9,
+        "p95": 5826.9,
+        "p99": 5826.9,
+        "p999": 5826.9
+      }
+    },
+    "histograms": {
+      "http.response_time": {
+        "min": 12,
+        "max": 823,
+        "count": 1000,
+        "p50": 267.8,
+        "median": 267.8,
+        "p75": 327.1,
+        "p90": 415.8,
+        "p95": 450.4,
+        "p99": 632.8,
+        "p999": 804.5
+      },
+      "vusers.session_length": {
+        "min": 4051.8,
+        "max": 5886.4,
+        "count": 50,
+        "p50": 5711.5,
+        "median": 5711.5,
+        "p75": 5826.9,
+        "p90": 5826.9,
+        "p95": 5826.9,
+        "p99": 5826.9,
+        "p999": 5826.9
+      }
+    }
+  },
+  "intermediate": [
+    {
+      "counters": {
+        "vusers.created_by_name.0": 4,
+        "vusers.created": 4,
+        "http.requests": 4
+      },
+      "rates": {
+        "http.request_rate": 4
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1671306499938,
+      "lastCounterAt": 1671306499999,
+      "firstMetricAt": 1671306499938,
+      "lastMetricAt": 1671306499999,
+      "period": "1671306490000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "http.codes.200": 1000,
+        "http.responses": 1000,
+        "http.requests": 996,
+        "vusers.created_by_name.0": 46,
+        "vusers.created": 46,
+        "vusers.failed": 0,
+        "vusers.completed": 50
+      },
+      "rates": {
+        "http.request_rate": 155
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1671306500012,
+      "firstHistogramAt": 1671306500012,
+      "lastCounterAt": 1671306506499,
+      "lastHistogramAt": 1671306506499,
+      "firstMetricAt": 1671306500012,
+      "lastMetricAt": 1671306506499,
+      "period": "1671306500000",
+      "summaries": {
+        "http.response_time": {
+          "min": 12,
+          "max": 823,
+          "count": 1000,
+          "p50": 267.8,
+          "median": 267.8,
+          "p75": 327.1,
+          "p90": 415.8,
+          "p95": 450.4,
+          "p99": 632.8,
+          "p999": 804.5
+        },
+        "vusers.session_length": {
+          "min": 4051.8,
+          "max": 5886.4,
+          "count": 50,
+          "p50": 5711.5,
+          "median": 5711.5,
+          "p75": 5826.9,
+          "p90": 5826.9,
+          "p95": 5826.9,
+          "p99": 5826.9,
+          "p999": 5826.9
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 12,
+          "max": 823,
+          "count": 1000,
+          "p50": 267.8,
+          "median": 267.8,
+          "p75": 327.1,
+          "p90": 415.8,
+          "p95": 450.4,
+          "p99": 632.8,
+          "p999": 804.5
+        },
+        "vusers.session_length": {
+          "min": 4051.8,
+          "max": 5886.4,
+          "count": 50,
+          "p50": 5711.5,
+          "median": 5711.5,
+          "p75": 5826.9,
+          "p90": 5826.9,
+          "p95": 5826.9,
+          "p99": 5826.9,
+          "p999": 5826.9
+        }
+      }
+    }
+  ]
+}
