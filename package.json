@@ -5,8 +5,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node main.js",
-    "watch": "nodemon main.js -e ejs,html,js,json"
+    "start": "node server.js",
+    "watch": "nodemon server.js -e ejs,html,js,json"
   },
   "keywords": [],
   "author": "",
