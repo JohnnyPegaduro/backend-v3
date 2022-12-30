@@ -1,1 +1,3 @@
 [2022-12-17T13:53:48.030] [ERROR] default - Api de productos: Error: connect ECONNREFUSED 127.0.0.1:3306
+[2022-12-22T20:34:41.534] [ERROR] default - Api de productos: Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: YES)
+[2022-12-22T20:36:00.332] [ERROR] default - Api de productos: Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: YES)

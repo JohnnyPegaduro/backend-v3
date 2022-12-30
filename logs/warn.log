@@ -1,6 +1,19 @@
-
 [2022-12-17T13:43:02.830] [WARN] default - Failed request GET at /info3
 [2022-12-17T13:51:30.766] [ERROR] default - Error en la Api de productos: Error: connect ECONNREFUSED 127.0.0.1:3306
 [2022-12-17T13:53:48.030] [ERROR] default - Api de productos: Error: connect ECONNREFUSED 127.0.0.1:3306
 [2022-12-17T14:17:09.790] [WARN] default - Failed request GET at /randoms
 [2022-12-17T16:07:08.649] [WARN] default - Failed request GET at /infi
+[2022-12-22T19:20:23.471] [WARN] default - Failed request GET at /favicon.ico
+[2022-12-22T19:20:31.192] [WARN] default - Failed request GET at /favicon.ico
+[2022-12-22T19:20:35.975] [WARN] default - Failed request GET at /favicon.ico
+[2022-12-22T19:20:38.667] [WARN] default - Failed request GET at /favicon.ico
+[2022-12-22T20:34:34.236] [WARN] default - Failed request GET at /favicon.ico
+[2022-12-22T20:34:41.534] [ERROR] default - Api de productos: Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: YES)
+[2022-12-22T20:34:41.861] [WARN] default - Failed request GET at /favicon.ico
+[2022-12-22T20:36:00.332] [ERROR] default - Api de productos: Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: YES)
+[2022-12-22T20:37:32.806] [WARN] default - Failed request GET at /favicon.ico
+[2022-12-22T20:51:08.309] [WARN] default - Failed request GET at /favicon.ico
+[2022-12-26T21:48:32.647] [WARN] default - Failed request GET at /favicon.ico
+[2022-12-26T21:48:45.881] [WARN] default - Failed request GET at /favicon.ico
+[2022-12-26T21:48:50.561] [WARN] default - Failed request GET at /favicon.ico
+[2022-12-26T21:48:53.399] [WARN] default - Failed request GET at /favicon.ico
